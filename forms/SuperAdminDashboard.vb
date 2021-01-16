@@ -33,4 +33,5 @@
     Private Sub nav_admins_Click(sender As Object, e As EventArgs) Handles nav_admins.Click
         SwitchPanel(AdminPage)
     End Sub
+
 End Class

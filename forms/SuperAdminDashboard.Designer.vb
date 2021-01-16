@@ -31,9 +31,9 @@ Partial Class SuperAdminDashboard
         Me.nav_books = New Guna.UI2.WinForms.Guna2Button()
         Me.nav_dashboard = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -195,17 +195,6 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel4.Size = New System.Drawing.Size(26, 59)
         Me.Guna2Panel4.TabIndex = 5
         '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackgroundImage = Global.Elebrary.My.Resources.Resources.logo
-        Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.Location = New System.Drawing.Point(64, 0)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(59, 59)
-        Me.Guna2Panel2.TabIndex = 3
-        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left
@@ -219,18 +208,29 @@ Partial Class SuperAdminDashboard
         '
         Me.MainPanel.BackColor = System.Drawing.Color.White
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.MainPanel.Location = New System.Drawing.Point(0, 60)
+        Me.MainPanel.Location = New System.Drawing.Point(0, 61)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.ShadowDecoration.Parent = Me.MainPanel
-        Me.MainPanel.Size = New System.Drawing.Size(1136, 585)
+        Me.MainPanel.Size = New System.Drawing.Size(1136, 600)
         Me.MainPanel.TabIndex = 1
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackgroundImage = Global.Elebrary.My.Resources.Resources.logo
+        Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel2.Location = New System.Drawing.Point(64, 0)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(59, 59)
+        Me.Guna2Panel2.TabIndex = 3
         '
         'SuperAdminDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1136, 645)
+        Me.ClientSize = New System.Drawing.Size(1136, 661)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
