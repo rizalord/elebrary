@@ -25,7 +25,7 @@
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim setupModal = New SetupModal()
-        setupModal.Show()
+        setupModal.ShowDialog()
 
     End Sub
 End Class

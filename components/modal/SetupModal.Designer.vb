@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SetupModal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class SetupModal
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -37,6 +37,8 @@ Partial Class SetupModal
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -193,12 +195,12 @@ Partial Class SetupModal
         Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"General (Public)", "School"})
+        Me.Guna2ComboBox1.Items.AddRange(New Object() {"General", "School"})
         Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
         Me.Guna2ComboBox1.Location = New System.Drawing.Point(18, 407)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
         Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(338, 36)
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(157, 36)
         Me.Guna2ComboBox1.StartIndex = 0
         Me.Guna2ComboBox1.TabIndex = 9
         '
@@ -223,12 +225,47 @@ Partial Class SetupModal
         Me.Guna2Button1.TabIndex = 10
         Me.Guna2Button1.Text = "Ready to start"
         '
+        'Guna2ComboBox2
+        '
+        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.Guna2ComboBox2.BorderRadius = 4
+        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox2.FocusedState.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Roboto", 10.5!)
+        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.Guna2ComboBox2.HoverState.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.ItemHeight = 30
+        Me.Guna2ComboBox2.Items.AddRange(New Object() {"USD", "Rupiah"})
+        Me.Guna2ComboBox2.ItemsAppearance.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Location = New System.Drawing.Point(199, 407)
+        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
+        Me.Guna2ComboBox2.ShadowDecoration.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Size = New System.Drawing.Size(157, 36)
+        Me.Guna2ComboBox2.StartIndex = 0
+        Me.Guna2ComboBox2.TabIndex = 12
+        '
+        'Guna2HtmlLabel6
+        '
+        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(199, 379)
+        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(65, 21)
+        Me.Guna2HtmlLabel6.TabIndex = 11
+        Me.Guna2HtmlLabel6.Text = "Currency"
+        '
         'SetupModal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(377, 545)
+        Me.Controls.Add(Me.Guna2ComboBox2)
+        Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Guna2ComboBox1)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
@@ -263,4 +300,6 @@ Partial Class SetupModal
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
