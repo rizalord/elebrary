@@ -33,9 +33,11 @@ Partial Class LoginModal
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -157,11 +159,23 @@ Partial Class LoginModal
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(154, Byte), Integer))
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Guna2Panel2.Location = New System.Drawing.Point(19, 296)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(338, 74)
         Me.Guna2Panel2.TabIndex = 26
+        '
+        'Guna2HtmlLabel5
+        '
+        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Pirata One", 32.0!)
+        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(114, 11)
+        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(113, 57)
+        Me.Guna2HtmlLabel5.TabIndex = 0
+        Me.Guna2HtmlLabel5.Text = "SN6UWi"
         '
         'Guna2TextBox3
         '
@@ -201,18 +215,21 @@ Partial Class LoginModal
         '
         'Guna2Button2
         '
-        Me.Guna2Button2.BackColor = System.Drawing.Color.White
+        Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.BorderRadius = 5
-        Me.Guna2Button2.Checked = True
         Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
         Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.White
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins", 9.0!)
         Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(122, Byte), Integer))
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
         Me.Guna2Button2.Location = New System.Drawing.Point(252, 404)
         Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.ShadowDecoration.BorderRadius = 1
+        Me.Guna2Button2.ShadowDecoration.Depth = 4
+        Me.Guna2Button2.ShadowDecoration.Enabled = True
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
+        Me.Guna2Button2.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
         Me.Guna2Button2.Size = New System.Drawing.Size(105, 30)
         Me.Guna2Button2.TabIndex = 29
         Me.Guna2Button2.Text = "Check"
@@ -237,6 +254,8 @@ Partial Class LoginModal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "LoginModal"
         Me.Text = "Login"
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -251,8 +270,9 @@ Partial Class LoginModal
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
