@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\card\BookCard.Designer.vb">
+      <DependentUpon>BookCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\BookCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="components\card\HistoryCard1.Designer.vb">
       <DependentUpon>HistoryCard1.vb</DependentUpon>
     </Compile>
@@ -107,6 +113,12 @@
       <DependentUpon>HistoryCard3.vb</DependentUpon>
     </Compile>
     <Compile Include="components\card\HistoryCard3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\card\LoanCard.Designer.vb">
+      <DependentUpon>LoanCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\LoanCard.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="components\modal\LoginModal.Designer.vb">
@@ -182,6 +194,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="components\card\BookCard.resx">
+      <DependentUpon>BookCard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\card\HistoryCard1.resx">
       <DependentUpon>HistoryCard1.vb</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\card\HistoryCard3.resx">
       <DependentUpon>HistoryCard3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\card\LoanCard.resx">
+      <DependentUpon>LoanCard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\LoginModal.resx">
       <DependentUpon>LoginModal.vb</DependentUpon>
@@ -214,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\DashboardPage.resx">
       <DependentUpon>DashboardPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\LoanPage.resx">
+      <DependentUpon>LoanPage.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +297,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\history-icon-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\chevron-right-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\chevron-left-transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

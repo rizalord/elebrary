@@ -31,15 +31,21 @@ Partial Class SuperAdminDashboard
         Me.nav_books = New Guna.UI2.WinForms.Guna2Button()
         Me.nav_dashboard = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2ComboBox1)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
         Me.Guna2Panel1.Controls.Add(Me.nav_admins)
         Me.Guna2Panel1.Controls.Add(Me.nav_classes)
         Me.Guna2Panel1.Controls.Add(Me.nav_loans)
@@ -195,6 +201,17 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel4.Size = New System.Drawing.Size(26, 59)
         Me.Guna2Panel4.TabIndex = 5
         '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackgroundImage = Global.Elebrary.My.Resources.Resources.logo
+        Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel2.Location = New System.Drawing.Point(64, 0)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(59, 59)
+        Me.Guna2Panel2.TabIndex = 3
+        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left
@@ -214,16 +231,47 @@ Partial Class SuperAdminDashboard
         Me.MainPanel.Size = New System.Drawing.Size(1136, 600)
         Me.MainPanel.TabIndex = 1
         '
-        'Guna2Panel2
+        'Guna2Panel5
         '
-        Me.Guna2Panel2.BackgroundImage = Global.Elebrary.My.Resources.Resources.logo
-        Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.Location = New System.Drawing.Point(64, 0)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(59, 59)
-        Me.Guna2Panel2.TabIndex = 3
+        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Guna2Panel5.Location = New System.Drawing.Point(1072, 0)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
+        Me.Guna2Panel5.Size = New System.Drawing.Size(64, 59)
+        Me.Guna2Panel5.TabIndex = 11
+        '
+        'Guna2ComboBox1
+        '
+        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.FillColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.ItemHeight = 30
+        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Profile", "Logout"})
+        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(926, 12)
+        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
+        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
+        Me.Guna2ComboBox1.TabIndex = 12
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(919, 19)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(121, 25)
+        Me.Guna2HtmlLabel1.TabIndex = 13
+        Me.Guna2HtmlLabel1.Text = "Ahmad Khamdani"
         '
         'SuperAdminDashboard
         '
@@ -235,9 +283,10 @@ Partial Class SuperAdminDashboard
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "SuperAdminDashboard"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SuperAdminDashboard"
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -252,4 +301,7 @@ Partial Class SuperAdminDashboard
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents MainPanel As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
