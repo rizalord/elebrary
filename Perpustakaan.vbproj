@@ -91,10 +91,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\card\AdminCard.Designer.vb">
+      <DependentUpon>AdminCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\AdminCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="components\card\BookCard.Designer.vb">
       <DependentUpon>BookCard.vb</DependentUpon>
     </Compile>
     <Compile Include="components\card\BookCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\card\ClassCard.Designer.vb">
+      <DependentUpon>ClassCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\ClassCard.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="components\card\HistoryCard1.Designer.vb">
@@ -194,8 +206,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="components\card\AdminCard.resx">
+      <DependentUpon>AdminCard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\card\BookCard.resx">
       <DependentUpon>BookCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\card\ClassCard.resx">
+      <DependentUpon>ClassCard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\card\HistoryCard1.resx">
       <DependentUpon>HistoryCard1.vb</DependentUpon>
@@ -227,8 +245,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\AdminPage.resx">
+      <DependentUpon>AdminPage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pages\BookPage.resx">
       <DependentUpon>BookPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\ClassesPage.resx">
+      <DependentUpon>ClassesPage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\DashboardPage.resx">
       <DependentUpon>DashboardPage.vb</DependentUpon>

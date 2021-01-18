@@ -25,6 +25,9 @@ Partial Class SuperAdminDashboard
         Me.components = New System.ComponentModel.Container()
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.nav_admins = New Guna.UI2.WinForms.Guna2Button()
         Me.nav_classes = New Guna.UI2.WinForms.Guna2Button()
         Me.nav_loans = New Guna.UI2.WinForms.Guna2Button()
@@ -34,9 +37,6 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,6 +60,51 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1136, 59)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(919, 19)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(121, 25)
+        Me.Guna2HtmlLabel1.TabIndex = 13
+        Me.Guna2HtmlLabel1.Text = "Ahmad Khamdani"
+        '
+        'Guna2ComboBox1
+        '
+        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.FillColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.ItemHeight = 30
+        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Profile", "Logout"})
+        Me.Guna2ComboBox1.ItemsAppearance.BackColor = System.Drawing.Color.White
+        Me.Guna2ComboBox1.ItemsAppearance.ForeColor = System.Drawing.Color.Black
+        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(926, 12)
+        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
+        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
+        Me.Guna2ComboBox1.TabIndex = 12
+        '
+        'Guna2Panel5
+        '
+        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Guna2Panel5.Location = New System.Drawing.Point(1072, 0)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
+        Me.Guna2Panel5.Size = New System.Drawing.Size(64, 59)
+        Me.Guna2Panel5.TabIndex = 11
         '
         'nav_admins
         '
@@ -230,48 +275,6 @@ Partial Class SuperAdminDashboard
         Me.MainPanel.ShadowDecoration.Parent = Me.MainPanel
         Me.MainPanel.Size = New System.Drawing.Size(1136, 600)
         Me.MainPanel.TabIndex = 1
-        '
-        'Guna2Panel5
-        '
-        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Guna2Panel5.Location = New System.Drawing.Point(1072, 0)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
-        Me.Guna2Panel5.Size = New System.Drawing.Size(64, 59)
-        Me.Guna2Panel5.TabIndex = 11
-        '
-        'Guna2ComboBox1
-        '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.FillColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Profile", "Logout"})
-        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(926, 12)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
-        Me.Guna2ComboBox1.TabIndex = 12
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 10.0!)
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(919, 19)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(121, 25)
-        Me.Guna2HtmlLabel1.TabIndex = 13
-        Me.Guna2HtmlLabel1.Text = "Ahmad Khamdani"
         '
         'SuperAdminDashboard
         '
