@@ -133,6 +133,60 @@
     <Compile Include="components\card\LoanCard.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="components\modal\AddAdminModal.Designer.vb">
+      <DependentUpon>AddAdminModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddAdminModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\AddBookModal.Designer.vb">
+      <DependentUpon>AddBookModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\AddClassModal.Designer.vb">
+      <DependentUpon>AddClassModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddClassModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\DeleteAdminModal.Designer.vb">
+      <DependentUpon>DeleteAdminModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DeleteAdminModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\DeleteBookModal.Designer.vb">
+      <DependentUpon>DeleteBookModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DeleteBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\DeleteClassModal.Designer.vb">
+      <DependentUpon>DeleteClassModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DeleteClassModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\DetailBookModal.Designer.vb">
+      <DependentUpon>DetailBookModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DetailBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\EditBookModal.Designer.vb">
+      <DependentUpon>EditBookModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\EditBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\EditClassModal.Designer.vb">
+      <DependentUpon>EditClassModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\EditClassModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="components\modal\LoginModal.Designer.vb">
       <DependentUpon>LoginModal.vb</DependentUpon>
     </Compile>
@@ -204,6 +258,12 @@
     <Compile Include="pages\LoanPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="pages\ProfilePage.Designer.vb">
+      <DependentUpon>ProfilePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProfilePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="components\card\AdminCard.resx">
@@ -226,6 +286,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\card\LoanCard.resx">
       <DependentUpon>LoanCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddAdminModal.resx">
+      <DependentUpon>AddAdminModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddBookModal.resx">
+      <DependentUpon>AddBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddClassModal.resx">
+      <DependentUpon>AddClassModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DeleteAdminModal.resx">
+      <DependentUpon>DeleteAdminModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DeleteBookModal.resx">
+      <DependentUpon>DeleteBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DeleteClassModal.resx">
+      <DependentUpon>DeleteClassModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DetailBookModal.resx">
+      <DependentUpon>DetailBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\EditBookModal.resx">
+      <DependentUpon>EditBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\EditClassModal.resx">
+      <DependentUpon>EditClassModal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\LoginModal.resx">
       <DependentUpon>LoginModal.vb</DependentUpon>
@@ -259,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\LoanPage.resx">
       <DependentUpon>LoanPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\ProfilePage.resx">
+      <DependentUpon>ProfilePage.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -330,6 +420,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\chevron-left-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\close-icon-transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

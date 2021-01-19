@@ -28,6 +28,8 @@ Partial Class BookPage
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -39,6 +41,7 @@ Partial Class BookPage
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -46,9 +49,6 @@ Partial Class BookPage
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Panel1.SuspendLayout()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
@@ -130,6 +130,48 @@ Partial Class BookPage
         Me.Guna2Panel10.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
         Me.Guna2Panel10.Size = New System.Drawing.Size(1008, 456)
         Me.Guna2Panel10.TabIndex = 14
+        '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2Button4.BorderRadius = 5
+        Me.Guna2Button4.BorderThickness = 1
+        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
+        Me.Guna2Button4.CustomizableEdges.BottomRight = False
+        Me.Guna2Button4.CustomizableEdges.TopRight = False
+        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Image = Global.Elebrary.My.Resources.Resources.chevron_left_transparent
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(10, 12)
+        Me.Guna2Button4.Location = New System.Drawing.Point(891, 404)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Size = New System.Drawing.Size(38, 36)
+        Me.Guna2Button4.TabIndex = 12
+        '
+        'Guna2Button3
+        '
+        Me.Guna2Button3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2Button3.BorderRadius = 5
+        Me.Guna2Button3.BorderThickness = 1
+        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomizableEdges.BottomLeft = False
+        Me.Guna2Button3.CustomizableEdges.TopLeft = False
+        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
+        Me.Guna2Button3.ImageSize = New System.Drawing.Size(10, 12)
+        Me.Guna2Button3.Location = New System.Drawing.Point(935, 404)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Size = New System.Drawing.Size(38, 36)
+        Me.Guna2Button3.TabIndex = 11
         '
         'Guna2Panel5
         '
@@ -257,6 +299,37 @@ Partial Class BookPage
         Me.Guna2Button1.TabIndex = 1
         Me.Guna2Button1.Text = "Add Book"
         '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.BorderRadius = 4
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
+        Me.Guna2TextBox1.IconLeft = Global.Elebrary.My.Resources.Resources.search_icon
+        Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(7, 0)
+        Me.Guna2TextBox1.IconLeftSize = New System.Drawing.Size(17, 17)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(34, 30)
+        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.Guna2TextBox1.PlaceholderText = "Search"
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(305, 38)
+        Me.Guna2TextBox1.TabIndex = 0
+        Me.Guna2TextBox1.TextOffset = New System.Drawing.Point(5, 0)
+        '
         'Guna2HtmlLabel13
         '
         Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
@@ -333,79 +406,6 @@ Partial Class BookPage
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(124, 28)
         Me.Guna2HtmlLabel9.TabIndex = 4
         Me.Guna2HtmlLabel9.Text = "Borrowed Books"
-        '
-        'Guna2Button4
-        '
-        Me.Guna2Button4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.Guna2Button4.BorderRadius = 5
-        Me.Guna2Button4.BorderThickness = 1
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomizableEdges.BottomRight = False
-        Me.Guna2Button4.CustomizableEdges.TopRight = False
-        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Image = Global.Elebrary.My.Resources.Resources.chevron_left_transparent
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(10, 12)
-        Me.Guna2Button4.Location = New System.Drawing.Point(891, 404)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(38, 36)
-        Me.Guna2Button4.TabIndex = 12
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.Guna2Button3.BorderRadius = 5
-        Me.Guna2Button3.BorderThickness = 1
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomizableEdges.BottomLeft = False
-        Me.Guna2Button3.CustomizableEdges.TopLeft = False
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
-        Me.Guna2Button3.ImageSize = New System.Drawing.Size(10, 12)
-        Me.Guna2Button3.Location = New System.Drawing.Point(935, 404)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(38, 36)
-        Me.Guna2Button3.TabIndex = 11
-        '
-        'Guna2TextBox1
-        '
-        Me.Guna2TextBox1.BorderRadius = 4
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Poppins", 12.0!)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.IconLeft = Global.Elebrary.My.Resources.Resources.search_icon
-        Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(7, 0)
-        Me.Guna2TextBox1.IconLeftSize = New System.Drawing.Size(17, 17)
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(34, 30)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.Guna2TextBox1.PlaceholderText = "Search"
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(305, 38)
-        Me.Guna2TextBox1.TabIndex = 0
-        Me.Guna2TextBox1.TextOffset = New System.Drawing.Point(5, 0)
         '
         'BookPage
         '

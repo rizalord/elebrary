@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub SuperAdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SwitchPanel(DashboardPage)
+        SwitchPanel(ProfilePage)
     End Sub
 
     Private Sub SwitchPanel(ByVal panel As Form)
@@ -34,4 +34,7 @@
         SwitchPanel(AdminPage)
     End Sub
 
+    Private Sub MainPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainPanel.Paint
+
+    End Sub
 End Class
