@@ -204,7 +204,7 @@ Partial Class LoanPage
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(477, 116)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(451, 116)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(90, 30)
         Me.Guna2HtmlLabel5.TabIndex = 6
@@ -215,7 +215,7 @@ Partial Class LoanPage
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(329, 116)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(312, 116)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(46, 30)
         Me.Guna2HtmlLabel4.TabIndex = 5
@@ -226,7 +226,7 @@ Partial Class LoanPage
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(104, 116)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(94, 116)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(74, 30)
         Me.Guna2HtmlLabel3.TabIndex = 4

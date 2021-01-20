@@ -127,10 +127,22 @@
     <Compile Include="components\card\HistoryCard3.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="components\card\LoanCard.Designer.vb">
-      <DependentUpon>LoanCard.vb</DependentUpon>
+    <Compile Include="components\card\LoanCard1.Designer.vb">
+      <DependentUpon>LoanCard1.vb</DependentUpon>
     </Compile>
-    <Compile Include="components\card\LoanCard.vb">
+    <Compile Include="components\card\LoanCard1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\card\LoanCard2.Designer.vb">
+      <DependentUpon>LoanCard2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\LoanCard2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\card\LoanCard3.Designer.vb">
+      <DependentUpon>LoanCard3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\LoanCard3.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="components\modal\AddAdminModal.Designer.vb">
@@ -149,6 +161,12 @@
       <DependentUpon>AddClassModal.vb</DependentUpon>
     </Compile>
     <Compile Include="components\modal\AddClassModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\AddLoanModal.Designer.vb">
+      <DependentUpon>AddLoanModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddLoanModal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="components\modal\DeleteAdminModal.Designer.vb">
@@ -284,8 +302,14 @@
     <EmbeddedResource Include="components\card\HistoryCard3.resx">
       <DependentUpon>HistoryCard3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="components\card\LoanCard.resx">
-      <DependentUpon>LoanCard.vb</DependentUpon>
+    <EmbeddedResource Include="components\card\LoanCard1.resx">
+      <DependentUpon>LoanCard1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\card\LoanCard2.resx">
+      <DependentUpon>LoanCard2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\card\LoanCard3.resx">
+      <DependentUpon>LoanCard3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddAdminModal.resx">
       <DependentUpon>AddAdminModal.vb</DependentUpon>
@@ -295,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddClassModal.resx">
       <DependentUpon>AddClassModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddLoanModal.resx">
+      <DependentUpon>AddLoanModal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\DeleteAdminModal.resx">
       <DependentUpon>DeleteAdminModal.vb</DependentUpon>
