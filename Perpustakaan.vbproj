@@ -163,6 +163,12 @@
     <Compile Include="components\modal\AddClassModal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="components\modal\AddLoanBook1Modal.Designer.vb">
+      <DependentUpon>AddLoanBook1Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddLoanBook1Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="components\modal\AddLoanModal.Designer.vb">
       <DependentUpon>AddLoanModal.vb</DependentUpon>
     </Compile>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddClassModal.resx">
       <DependentUpon>AddClassModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddLoanBook1Modal.resx">
+      <DependentUpon>AddLoanBook1Modal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddLoanModal.resx">
       <DependentUpon>AddLoanModal.vb</DependentUpon>
