@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class DeleteAdminModal
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class DeleteLoanModal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class DeleteAdminModal
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -28,6 +28,8 @@ Partial Class DeleteAdminModal
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.Guna2ShadowForm2 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
@@ -61,7 +63,7 @@ Partial Class DeleteAdminModal
         Me.Guna2Panel1.ShadowDecoration.Depth = 20
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(544, 54)
-        Me.Guna2Panel1.TabIndex = 11
+        Me.Guna2Panel1.TabIndex = 14
         '
         'Guna2ImageButton1
         '
@@ -89,10 +91,14 @@ Partial Class DeleteAdminModal
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins Medium", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(20, 10)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(137, 38)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(119, 38)
         Me.Guna2HtmlLabel1.TabIndex = 3
-        Me.Guna2HtmlLabel1.Text = "Delete Admin"
+        Me.Guna2HtmlLabel1.Text = "Delete Loan"
         Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2BorderlessForm2
+        '
+        Me.Guna2BorderlessForm2.ContainerControl = Me
         '
         'Guna2Panel2
         '
@@ -113,7 +119,7 @@ Partial Class DeleteAdminModal
         Me.Guna2Panel2.ShadowDecoration.Depth = 20
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(544, 54)
-        Me.Guna2Panel2.TabIndex = 12
+        Me.Guna2Panel2.TabIndex = 15
         '
         'Guna2Button2
         '
@@ -160,7 +166,7 @@ Partial Class DeleteAdminModal
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
         Me.Guna2Panel3.Size = New System.Drawing.Size(499, 59)
-        Me.Guna2Panel3.TabIndex = 13
+        Me.Guna2Panel3.TabIndex = 16
         '
         'Guna2HtmlLabel2
         '
@@ -174,7 +180,7 @@ Partial Class DeleteAdminModal
         Me.Guna2HtmlLabel2.Text = "Are you sure want to delete this record ?"
         Me.Guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'DeleteAdminModal
+        'DeleteLoanModal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -184,8 +190,8 @@ Partial Class DeleteAdminModal
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "DeleteAdminModal"
-        Me.Text = "DeleteAdminModal"
+        Me.Name = "DeleteLoanModal"
+        Me.Text = "DeleteLoanModal"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel2.ResumeLayout(False)
@@ -205,4 +211,6 @@ Partial Class DeleteAdminModal
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents Guna2ShadowForm2 As Guna.UI2.WinForms.Guna2ShadowForm
 End Class

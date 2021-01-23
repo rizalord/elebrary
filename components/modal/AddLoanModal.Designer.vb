@@ -42,13 +42,14 @@ Partial Class AddLoanModal
         Me.Guna2ShadowForm2 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2NumericUpDown1 = New Guna.UI2.WinForms.Guna2NumericUpDown()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -307,25 +308,6 @@ Partial Class AddLoanModal
         Me.Guna2TextBox1.Size = New System.Drawing.Size(297, 32)
         Me.Guna2TextBox1.TabIndex = 26
         '
-        'Guna2ComboBox1
-        '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(293, 274)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(297, 36)
-        Me.Guna2ComboBox1.TabIndex = 36
-        '
         'Guna2ComboBox2
         '
         Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
@@ -388,17 +370,38 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel8.TabIndex = 40
         Me.Guna2HtmlLabel8.Text = "Book List"
         '
+        'Guna2NumericUpDown1
+        '
+        Me.Guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2NumericUpDown1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2NumericUpDown1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2NumericUpDown1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2NumericUpDown1.DisabledState.Parent = Me.Guna2NumericUpDown1
+        Me.Guna2NumericUpDown1.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(CType(CType(177, Byte), Integer), CType(CType(177, Byte), Integer), CType(CType(177, Byte), Integer))
+        Me.Guna2NumericUpDown1.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(203, Byte), Integer))
+        Me.Guna2NumericUpDown1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2NumericUpDown1.FocusedState.Parent = Me.Guna2NumericUpDown1
+        Me.Guna2NumericUpDown1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2NumericUpDown1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(126, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2NumericUpDown1.Location = New System.Drawing.Point(293, 278)
+        Me.Guna2NumericUpDown1.Name = "Guna2NumericUpDown1"
+        Me.Guna2NumericUpDown1.ShadowDecoration.Parent = Me.Guna2NumericUpDown1
+        Me.Guna2NumericUpDown1.Size = New System.Drawing.Size(297, 36)
+        Me.Guna2NumericUpDown1.TabIndex = 41
+        Me.Guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        '
         'AddLoanModal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(750, 523)
+        Me.Controls.Add(Me.Guna2NumericUpDown1)
         Me.Controls.Add(Me.Guna2HtmlLabel8)
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.Guna2DateTimePicker1)
         Me.Controls.Add(Me.Guna2ComboBox2)
-        Me.Controls.Add(Me.Guna2ComboBox1)
         Me.Controls.Add(Me.Guna2TextBox2)
         Me.Controls.Add(Me.Guna2HtmlLabel7)
         Me.Controls.Add(Me.Guna2ToggleSwitch1)
@@ -416,6 +419,7 @@ Partial Class AddLoanModal
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        CType(Me.Guna2NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -424,7 +428,6 @@ Partial Class AddLoanModal
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
@@ -445,4 +448,5 @@ Partial Class AddLoanModal
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents Guna2NumericUpDown1 As Guna.UI2.WinForms.Guna2NumericUpDown
 End Class

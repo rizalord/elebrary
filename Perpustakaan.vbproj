@@ -169,6 +169,12 @@
     <Compile Include="components\modal\AddLoanBook1Modal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="components\modal\AddLoanBook2Modal.Designer.vb">
+      <DependentUpon>AddLoanBook2Modal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddLoanBook2Modal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="components\modal\AddLoanModal.Designer.vb">
       <DependentUpon>AddLoanModal.vb</DependentUpon>
     </Compile>
@@ -193,10 +199,22 @@
     <Compile Include="components\modal\DeleteClassModal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="components\modal\DeleteLoanModal.Designer.vb">
+      <DependentUpon>DeleteLoanModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DeleteLoanModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="components\modal\DetailBookModal.Designer.vb">
       <DependentUpon>DetailBookModal.vb</DependentUpon>
     </Compile>
     <Compile Include="components\modal\DetailBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\DetailFineModal.Designer.vb">
+      <DependentUpon>DetailFineModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\DetailFineModal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="components\modal\EditBookModal.Designer.vb">
@@ -209,6 +227,18 @@
       <DependentUpon>EditClassModal.vb</DependentUpon>
     </Compile>
     <Compile Include="components\modal\EditClassModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\EditLoanBookModal.Designer.vb">
+      <DependentUpon>EditLoanBookModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\EditLoanBookModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\EditLoanModal.Designer.vb">
+      <DependentUpon>EditLoanModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\EditLoanModal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="components\modal\LoginModal.Designer.vb">
@@ -329,6 +359,9 @@
     <EmbeddedResource Include="components\modal\AddLoanBook1Modal.resx">
       <DependentUpon>AddLoanBook1Modal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddLoanBook2Modal.resx">
+      <DependentUpon>AddLoanBook2Modal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddLoanModal.resx">
       <DependentUpon>AddLoanModal.vb</DependentUpon>
     </EmbeddedResource>
@@ -341,14 +374,26 @@
     <EmbeddedResource Include="components\modal\DeleteClassModal.resx">
       <DependentUpon>DeleteClassModal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DeleteLoanModal.resx">
+      <DependentUpon>DeleteLoanModal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\modal\DetailBookModal.resx">
       <DependentUpon>DetailBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\DetailFineModal.resx">
+      <DependentUpon>DetailFineModal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\EditBookModal.resx">
       <DependentUpon>EditBookModal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\EditClassModal.resx">
       <DependentUpon>EditClassModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\EditLoanBookModal.resx">
+      <DependentUpon>EditLoanBookModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\EditLoanModal.resx">
+      <DependentUpon>EditLoanModal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\LoginModal.resx">
       <DependentUpon>LoginModal.vb</DependentUpon>
