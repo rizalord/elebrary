@@ -24,13 +24,14 @@ Partial Class AdminPage
     Private Sub InitializeComponent()
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_add_admin = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -41,7 +42,6 @@ Partial Class AdminPage
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class AdminPage
         Me.Guna2Panel10.Controls.Add(Me.ListPanel)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel3)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel10.Controls.Add(Me.btn_add_admin)
         Me.Guna2Panel10.Controls.Add(Me.Guna2TextBox1)
         Me.Guna2Panel10.FillColor = System.Drawing.Color.White
         Me.Guna2Panel10.Location = New System.Drawing.Point(0, 35)
@@ -79,6 +79,17 @@ Partial Class AdminPage
         Me.Guna2Panel10.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
         Me.Guna2Panel10.Size = New System.Drawing.Size(1008, 456)
         Me.Guna2Panel10.TabIndex = 14
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(25, 408)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(231, 30)
+        Me.Guna2HtmlLabel7.TabIndex = 13
+        Me.Guna2HtmlLabel7.Text = "Showing 1 to 4 of 2000 results"
         '
         'Guna2Button4
         '
@@ -162,20 +173,20 @@ Partial Class AdminPage
         Me.Guna2Panel3.Size = New System.Drawing.Size(949, 1)
         Me.Guna2Panel3.TabIndex = 7
         '
-        'Guna2Button1
+        'btn_add_admin
         '
-        Me.Guna2Button1.BorderRadius = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(834, 30)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(117, 38)
-        Me.Guna2Button1.TabIndex = 1
-        Me.Guna2Button1.Text = "Add Admin"
+        Me.btn_add_admin.BorderRadius = 3
+        Me.btn_add_admin.CheckedState.Parent = Me.btn_add_admin
+        Me.btn_add_admin.CustomImages.Parent = Me.btn_add_admin
+        Me.btn_add_admin.Font = New System.Drawing.Font("Poppins Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add_admin.ForeColor = System.Drawing.Color.White
+        Me.btn_add_admin.HoverState.Parent = Me.btn_add_admin
+        Me.btn_add_admin.Location = New System.Drawing.Point(834, 30)
+        Me.btn_add_admin.Name = "btn_add_admin"
+        Me.btn_add_admin.ShadowDecoration.Parent = Me.btn_add_admin
+        Me.btn_add_admin.Size = New System.Drawing.Size(117, 38)
+        Me.btn_add_admin.TabIndex = 1
+        Me.btn_add_admin.Text = "Add Admin"
         '
         'Guna2TextBox1
         '
@@ -302,17 +313,6 @@ Partial Class AdminPage
         Me.Guna2HtmlLabel6.TabIndex = 9
         Me.Guna2HtmlLabel6.Text = "Showing 1 to 4 of 2000 results"
         '
-        'Guna2HtmlLabel7
-        '
-        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 12.0!)
-        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(25, 408)
-        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(231, 30)
-        Me.Guna2HtmlLabel7.TabIndex = 13
-        Me.Guna2HtmlLabel7.Text = "Showing 1 to 4 of 2000 results"
-        '
         'AdminPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -347,7 +347,7 @@ Partial Class AdminPage
     Friend WithEvents ListPanel As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_add_admin As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel

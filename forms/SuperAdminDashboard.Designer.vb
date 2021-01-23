@@ -26,7 +26,7 @@ Partial Class SuperAdminDashboard
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.navbar_dropdown = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.nav_admins = New Guna.UI2.WinForms.Guna2Button()
         Me.nav_classes = New Guna.UI2.WinForms.Guna2Button()
@@ -44,7 +44,7 @@ Partial Class SuperAdminDashboard
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.White
         Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ComboBox1)
+        Me.Guna2Panel1.Controls.Add(Me.navbar_dropdown)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
         Me.Guna2Panel1.Controls.Add(Me.nav_admins)
         Me.Guna2Panel1.Controls.Add(Me.nav_classes)
@@ -72,30 +72,30 @@ Partial Class SuperAdminDashboard
         Me.Guna2HtmlLabel1.TabIndex = 13
         Me.Guna2HtmlLabel1.Text = "Ahmad Khamdani"
         '
-        'Guna2ComboBox1
+        'navbar_dropdown
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.FillColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Profile", "Logout"})
-        Me.Guna2ComboBox1.ItemsAppearance.BackColor = System.Drawing.Color.White
-        Me.Guna2ComboBox1.ItemsAppearance.ForeColor = System.Drawing.Color.Black
-        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(926, 12)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(140, 36)
-        Me.Guna2ComboBox1.TabIndex = 12
+        Me.navbar_dropdown.BackColor = System.Drawing.Color.Transparent
+        Me.navbar_dropdown.BorderColor = System.Drawing.Color.White
+        Me.navbar_dropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.navbar_dropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.navbar_dropdown.FocusedColor = System.Drawing.Color.White
+        Me.navbar_dropdown.FocusedState.BorderColor = System.Drawing.Color.White
+        Me.navbar_dropdown.FocusedState.FillColor = System.Drawing.Color.White
+        Me.navbar_dropdown.FocusedState.Parent = Me.navbar_dropdown
+        Me.navbar_dropdown.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.navbar_dropdown.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.navbar_dropdown.HoverState.Parent = Me.navbar_dropdown
+        Me.navbar_dropdown.ItemHeight = 30
+        Me.navbar_dropdown.Items.AddRange(New Object() {"Profile", "Logout"})
+        Me.navbar_dropdown.ItemsAppearance.BackColor = System.Drawing.Color.White
+        Me.navbar_dropdown.ItemsAppearance.ForeColor = System.Drawing.Color.Black
+        Me.navbar_dropdown.ItemsAppearance.Parent = Me.navbar_dropdown
+        Me.navbar_dropdown.ItemsAppearance.SelectedBackColor = System.Drawing.Color.WhiteSmoke
+        Me.navbar_dropdown.Location = New System.Drawing.Point(926, 12)
+        Me.navbar_dropdown.Name = "navbar_dropdown"
+        Me.navbar_dropdown.ShadowDecoration.Parent = Me.navbar_dropdown
+        Me.navbar_dropdown.Size = New System.Drawing.Size(140, 36)
+        Me.navbar_dropdown.TabIndex = 12
         '
         'Guna2Panel5
         '
@@ -304,7 +304,7 @@ Partial Class SuperAdminDashboard
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents MainPanel As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents navbar_dropdown As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

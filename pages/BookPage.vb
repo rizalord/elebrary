@@ -15,8 +15,10 @@
 
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        Dim abm As AddBookModal = New AddBookModal
-        abm.ShowDialog()
+    Private Sub btn_add_book_Click(sender As Object, e As EventArgs) Handles btn_add_book.Click
+        Dim abm As AddBookModal = New AddBookModal()
+        If abm.ShowDialog() = DialogResult.OK Then
+
+        End If
     End Sub
 End Class

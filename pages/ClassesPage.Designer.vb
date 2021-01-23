@@ -34,7 +34,7 @@ Partial Class ClassesPage
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_add_class = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -69,7 +69,7 @@ Partial Class ClassesPage
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel10.Controls.Add(Me.btn_add_class)
         Me.Guna2Panel10.Controls.Add(Me.Guna2TextBox1)
         Me.Guna2Panel10.FillColor = System.Drawing.Color.White
         Me.Guna2Panel10.Location = New System.Drawing.Point(0, 35)
@@ -207,20 +207,20 @@ Partial Class ClassesPage
         Me.Guna2HtmlLabel2.TabIndex = 3
         Me.Guna2HtmlLabel2.Text = "ID"
         '
-        'Guna2Button1
+        'btn_add_class
         '
-        Me.Guna2Button1.BorderRadius = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(834, 30)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(117, 38)
-        Me.Guna2Button1.TabIndex = 1
-        Me.Guna2Button1.Text = "Add Class"
+        Me.btn_add_class.BorderRadius = 3
+        Me.btn_add_class.CheckedState.Parent = Me.btn_add_class
+        Me.btn_add_class.CustomImages.Parent = Me.btn_add_class
+        Me.btn_add_class.Font = New System.Drawing.Font("Poppins Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add_class.ForeColor = System.Drawing.Color.White
+        Me.btn_add_class.HoverState.Parent = Me.btn_add_class
+        Me.btn_add_class.Location = New System.Drawing.Point(834, 30)
+        Me.btn_add_class.Name = "btn_add_class"
+        Me.btn_add_class.ShadowDecoration.Parent = Me.btn_add_class
+        Me.btn_add_class.Size = New System.Drawing.Size(117, 38)
+        Me.btn_add_class.TabIndex = 1
+        Me.btn_add_class.Text = "Add Class"
         '
         'Guna2TextBox1
         '
@@ -326,7 +326,7 @@ Partial Class ClassesPage
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_add_class As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel

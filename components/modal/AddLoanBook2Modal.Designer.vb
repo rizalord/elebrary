@@ -26,7 +26,7 @@ Partial Class AddLoanBook2Modal
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2NumericUpDown1 = New Guna.UI2.WinForms.Guna2NumericUpDown()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -42,7 +42,7 @@ Partial Class AddLoanBook2Modal
         '
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel2.Controls.Add(Me.btn_cancel)
         Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
@@ -59,25 +59,25 @@ Partial Class AddLoanBook2Modal
         Me.Guna2Panel2.Size = New System.Drawing.Size(323, 54)
         Me.Guna2Panel2.TabIndex = 27
         '
-        'Guna2Button2
+        'btn_cancel
         '
-        Me.Guna2Button2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.Guna2Button2.BorderRadius = 3
-        Me.Guna2Button2.BorderThickness = 1
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
-        Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(156, 12)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(94, 30)
-        Me.Guna2Button2.TabIndex = 1
-        Me.Guna2Button2.Text = "Cancel"
+        Me.btn_cancel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.btn_cancel.BorderRadius = 3
+        Me.btn_cancel.BorderThickness = 1
+        Me.btn_cancel.CheckedState.Parent = Me.btn_cancel
+        Me.btn_cancel.CustomImages.Parent = Me.btn_cancel
+        Me.btn_cancel.FillColor = System.Drawing.Color.Transparent
+        Me.btn_cancel.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.btn_cancel.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.btn_cancel.HoverState.Parent = Me.btn_cancel
+        Me.btn_cancel.Location = New System.Drawing.Point(156, 12)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.btn_cancel.ShadowDecoration.Parent = Me.btn_cancel
+        Me.btn_cancel.Size = New System.Drawing.Size(94, 30)
+        Me.btn_cancel.TabIndex = 1
+        Me.btn_cancel.Text = "Cancel"
         '
         'Guna2Button1
         '
@@ -138,6 +138,7 @@ Partial Class AddLoanBook2Modal
         Me.Controls.Add(Me.Guna2Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AddLoanBook2Modal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AddLoanBook2Modal"
         Me.Guna2Panel2.ResumeLayout(False)
         CType(Me.Guna2NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -149,7 +150,7 @@ Partial Class AddLoanBook2Modal
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2NumericUpDown1 As Guna.UI2.WinForms.Guna2NumericUpDown

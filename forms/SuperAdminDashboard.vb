@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub SuperAdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SwitchPanel(ProfilePage)
+        SwitchPanel(DashboardPage)
     End Sub
 
     Private Sub SwitchPanel(ByVal panel As Form)
@@ -34,7 +34,26 @@
         SwitchPanel(AdminPage)
     End Sub
 
-    Private Sub MainPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainPanel.Paint
 
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles navbar_dropdown.SelectedIndexChanged
+        If navbar_dropdown.SelectedIndex = 0 Then
+            SwitchPanel(ProfilePage)
+            nav_dashboard.Checked = False
+            nav_books.Checked = False
+            nav_classes.Checked = False
+            nav_loans.Checked = False
+            nav_admins.Checked = False
+        ElseIf navbar_dropdown.SelectedIndex = 1 Then
+            nav_dashboard.Checked = False
+            nav_books.Checked = False
+            nav_classes.Checked = False
+            nav_loans.Checked = False
+            nav_admins.Checked = False
+
+            Dim btw As Welcome = New Welcome()
+            btw.Show()
+            Me.Close()
+        End If
     End Sub
+
 End Class

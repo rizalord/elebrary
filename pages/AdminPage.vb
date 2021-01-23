@@ -8,4 +8,9 @@
             ListPanel.Controls.Add(c)
         Next
     End Sub
+
+    Private Sub btn_add_admin_Click(sender As Object, e As EventArgs) Handles btn_add_admin.Click
+        Dim aam As AddAdminModal = New AddAdminModal()
+        aam.ShowDialog()
+    End Sub
 End Class

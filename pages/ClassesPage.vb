@@ -8,4 +8,9 @@
             ListPanel.Controls.Add(c)
         Next
     End Sub
+
+    Private Sub btn_add_class_Click(sender As Object, e As EventArgs) Handles btn_add_class.Click
+        Dim mdl As AddClassModal = New AddClassModal()
+        mdl.ShowDialog()
+    End Sub
 End Class

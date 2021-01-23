@@ -26,11 +26,11 @@ Partial Class AddAdminModal
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -49,7 +49,7 @@ Partial Class AddAdminModal
         '
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel2.Controls.Add(Me.btn_cancel)
         Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
@@ -66,25 +66,25 @@ Partial Class AddAdminModal
         Me.Guna2Panel2.Size = New System.Drawing.Size(750, 54)
         Me.Guna2Panel2.TabIndex = 9
         '
-        'Guna2Button2
+        'btn_cancel
         '
-        Me.Guna2Button2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.Guna2Button2.BorderRadius = 3
-        Me.Guna2Button2.BorderThickness = 1
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
-        Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(557, 12)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(94, 30)
-        Me.Guna2Button2.TabIndex = 1
-        Me.Guna2Button2.Text = "Cancel"
+        Me.btn_cancel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.btn_cancel.BorderRadius = 3
+        Me.btn_cancel.BorderThickness = 1
+        Me.btn_cancel.CheckedState.Parent = Me.btn_cancel
+        Me.btn_cancel.CustomImages.Parent = Me.btn_cancel
+        Me.btn_cancel.FillColor = System.Drawing.Color.Transparent
+        Me.btn_cancel.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.btn_cancel.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.btn_cancel.HoverState.Parent = Me.btn_cancel
+        Me.btn_cancel.Location = New System.Drawing.Point(557, 12)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.btn_cancel.ShadowDecoration.Parent = Me.btn_cancel
+        Me.btn_cancel.Size = New System.Drawing.Size(94, 30)
+        Me.btn_cancel.TabIndex = 1
+        Me.btn_cancel.Text = "Cancel"
         '
         'Guna2Button1
         '
@@ -123,17 +123,6 @@ Partial Class AddAdminModal
         Me.Guna2Panel1.Size = New System.Drawing.Size(750, 54)
         Me.Guna2Panel1.TabIndex = 8
         '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins Medium", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(20, 10)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(117, 38)
-        Me.Guna2HtmlLabel1.TabIndex = 3
-        Me.Guna2HtmlLabel1.Text = "Add Admin"
-        Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Guna2ImageButton1
         '
         Me.Guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -153,6 +142,17 @@ Partial Class AddAdminModal
         Me.Guna2ImageButton1.PressedState.Parent = Me.Guna2ImageButton1
         Me.Guna2ImageButton1.Size = New System.Drawing.Size(32, 32)
         Me.Guna2ImageButton1.TabIndex = 6
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins Medium", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(20, 10)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(117, 38)
+        Me.Guna2HtmlLabel1.TabIndex = 3
+        Me.Guna2HtmlLabel1.Text = "Add Admin"
+        Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2TextBox3
         '
@@ -284,7 +284,7 @@ Partial Class AddAdminModal
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AddAdminModal"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AddAdminModal"
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
@@ -297,7 +297,7 @@ Partial Class AddAdminModal
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ImageButton1 As Guna.UI2.WinForms.Guna2ImageButton

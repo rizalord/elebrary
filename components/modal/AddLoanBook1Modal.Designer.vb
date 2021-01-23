@@ -26,22 +26,22 @@ Partial Class AddLoanBook1Modal
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -52,10 +52,10 @@ Partial Class AddLoanBook1Modal
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel4.SuspendLayout()
-        Me.Guna2Panel5.SuspendLayout()
-        Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
+        Me.Guna2Panel6.SuspendLayout()
+        Me.Guna2Panel5.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
         Me.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class AddLoanBook1Modal
         '
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button2)
+        Me.Guna2Panel2.Controls.Add(Me.btn_cancel)
         Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
@@ -85,25 +85,25 @@ Partial Class AddLoanBook1Modal
         Me.Guna2Panel2.Size = New System.Drawing.Size(866, 54)
         Me.Guna2Panel2.TabIndex = 26
         '
-        'Guna2Button2
+        'btn_cancel
         '
-        Me.Guna2Button2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.Guna2Button2.BorderRadius = 3
-        Me.Guna2Button2.BorderThickness = 1
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
-        Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(666, 12)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(94, 30)
-        Me.Guna2Button2.TabIndex = 1
-        Me.Guna2Button2.Text = "Cancel"
+        Me.btn_cancel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.btn_cancel.BorderRadius = 3
+        Me.btn_cancel.BorderThickness = 1
+        Me.btn_cancel.CheckedState.Parent = Me.btn_cancel
+        Me.btn_cancel.CustomImages.Parent = Me.btn_cancel
+        Me.btn_cancel.FillColor = System.Drawing.Color.Transparent
+        Me.btn_cancel.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.btn_cancel.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.btn_cancel.HoverState.Parent = Me.btn_cancel
+        Me.btn_cancel.Location = New System.Drawing.Point(666, 12)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.btn_cancel.ShadowDecoration.Parent = Me.btn_cancel
+        Me.btn_cancel.Size = New System.Drawing.Size(94, 30)
+        Me.btn_cancel.TabIndex = 1
+        Me.btn_cancel.Text = "Cancel"
         '
         'Guna2Button1
         '
@@ -187,57 +187,44 @@ Partial Class AddLoanBook1Modal
         Me.Guna2Panel3.Size = New System.Drawing.Size(402, 357)
         Me.Guna2Panel3.TabIndex = 27
         '
-        'Guna2Panel4
+        'Guna2Panel7
         '
-        Me.Guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Guna2Panel4.BorderRadius = 3
-        Me.Guna2Panel4.BorderThickness = 1
-        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel8)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel9)
-        Me.Guna2Panel4.Location = New System.Drawing.Point(438, 87)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(402, 404)
-        Me.Guna2Panel4.TabIndex = 28
+        Me.Guna2Panel7.BorderColor = System.Drawing.Color.LightGray
+        Me.Guna2Panel7.BorderRadius = 3
+        Me.Guna2Panel7.BorderThickness = 1
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Button5)
+        Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(16, 107)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.ShadowDecoration.Parent = Me.Guna2Panel7
+        Me.Guna2Panel7.Size = New System.Drawing.Size(371, 39)
+        Me.Guna2Panel7.TabIndex = 2
         '
-        'Guna2Panel5
+        'Guna2Button5
         '
-        Me.Guna2Panel5.BorderColor = System.Drawing.Color.LightGray
-        Me.Guna2Panel5.BorderRadius = 3
-        Me.Guna2Panel5.BorderThickness = 1
-        Me.Guna2Panel5.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel5.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Guna2Panel5.Location = New System.Drawing.Point(16, 17)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
-        Me.Guna2Panel5.Size = New System.Drawing.Size(371, 39)
-        Me.Guna2Panel5.TabIndex = 0
+        Me.Guna2Button5.BorderRadius = 3
+        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
+        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
+        Me.Guna2Button5.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
+        Me.Guna2Button5.Location = New System.Drawing.Point(299, 5)
+        Me.Guna2Button5.Name = "Guna2Button5"
+        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
+        Me.Guna2Button5.Size = New System.Drawing.Size(66, 30)
+        Me.Guna2Button5.TabIndex = 1
+        Me.Guna2Button5.Text = "Add"
         '
-        'Guna2HtmlLabel2
+        'Guna2HtmlLabel4
         '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(12, 5)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(166, 30)
-        Me.Guna2HtmlLabel2.TabIndex = 0
-        Me.Guna2HtmlLabel2.Text = "Sherlock Holmes (10)"
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.BorderRadius = 3
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(299, 5)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(66, 30)
-        Me.Guna2Button3.TabIndex = 1
-        Me.Guna2Button3.Text = "Add"
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(12, 5)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(166, 30)
+        Me.Guna2HtmlLabel4.TabIndex = 0
+        Me.Guna2HtmlLabel4.Text = "Sherlock Holmes (10)"
         '
         'Guna2Panel6
         '
@@ -278,44 +265,57 @@ Partial Class AddLoanBook1Modal
         Me.Guna2HtmlLabel3.TabIndex = 0
         Me.Guna2HtmlLabel3.Text = "Sherlock Holmes (10)"
         '
-        'Guna2Panel7
+        'Guna2Panel5
         '
-        Me.Guna2Panel7.BorderColor = System.Drawing.Color.LightGray
-        Me.Guna2Panel7.BorderRadius = 3
-        Me.Guna2Panel7.BorderThickness = 1
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button5)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.Guna2Panel7.Location = New System.Drawing.Point(16, 107)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.ShadowDecoration.Parent = Me.Guna2Panel7
-        Me.Guna2Panel7.Size = New System.Drawing.Size(371, 39)
-        Me.Guna2Panel7.TabIndex = 2
+        Me.Guna2Panel5.BorderColor = System.Drawing.Color.LightGray
+        Me.Guna2Panel5.BorderRadius = 3
+        Me.Guna2Panel5.BorderThickness = 1
+        Me.Guna2Panel5.Controls.Add(Me.Guna2Button3)
+        Me.Guna2Panel5.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(16, 17)
+        Me.Guna2Panel5.Name = "Guna2Panel5"
+        Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
+        Me.Guna2Panel5.Size = New System.Drawing.Size(371, 39)
+        Me.Guna2Panel5.TabIndex = 0
         '
-        'Guna2Button5
+        'Guna2Button3
         '
-        Me.Guna2Button5.BorderRadius = 3
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(299, 5)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(66, 30)
-        Me.Guna2Button5.TabIndex = 1
-        Me.Guna2Button5.Text = "Add"
+        Me.Guna2Button3.BorderRadius = 3
+        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Location = New System.Drawing.Point(299, 5)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Size = New System.Drawing.Size(66, 30)
+        Me.Guna2Button3.TabIndex = 1
+        Me.Guna2Button3.Text = "Add"
         '
-        'Guna2HtmlLabel4
+        'Guna2HtmlLabel2
         '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(12, 5)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(166, 30)
-        Me.Guna2HtmlLabel4.TabIndex = 0
-        Me.Guna2HtmlLabel4.Text = "Sherlock Holmes (10)"
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(12, 5)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(166, 30)
+        Me.Guna2HtmlLabel2.TabIndex = 0
+        Me.Guna2HtmlLabel2.Text = "Sherlock Holmes (10)"
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.Guna2Panel4.BorderRadius = 3
+        Me.Guna2Panel4.BorderThickness = 1
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel8)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Panel9)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(438, 87)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
+        Me.Guna2Panel4.Size = New System.Drawing.Size(402, 404)
+        Me.Guna2Panel4.TabIndex = 28
         '
         'Guna2Panel8
         '
@@ -440,18 +440,19 @@ Partial Class AddLoanBook1Modal
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "AddLoanBook1Modal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AddLoanBook1Modal"
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel4.ResumeLayout(False)
-        Me.Guna2Panel5.ResumeLayout(False)
-        Me.Guna2Panel5.PerformLayout()
-        Me.Guna2Panel6.ResumeLayout(False)
-        Me.Guna2Panel6.PerformLayout()
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
+        Me.Guna2Panel6.ResumeLayout(False)
+        Me.Guna2Panel6.PerformLayout()
+        Me.Guna2Panel5.ResumeLayout(False)
+        Me.Guna2Panel5.PerformLayout()
+        Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel8.PerformLayout()
         Me.Guna2Panel9.ResumeLayout(False)
@@ -481,7 +482,7 @@ Partial Class AddLoanBook1Modal
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ImageButton1 As Guna.UI2.WinForms.Guna2ImageButton

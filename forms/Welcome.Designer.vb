@@ -30,7 +30,7 @@ Partial Class Welcome
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.main_button = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'Guna2HtmlLabel1
@@ -96,26 +96,26 @@ Partial Class Welcome
         Me.Guna2HtmlLabel6.TabIndex = 7
         Me.Guna2HtmlLabel6.Text = "easy to manage library books."
         '
-        'Guna2Button1
+        'main_button
         '
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.BorderRadius = 5
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins", 10.5!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(131, 325)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.BorderRadius = 1
-        Me.Guna2Button1.ShadowDecoration.Depth = 4
-        Me.Guna2Button1.ShadowDecoration.Enabled = True
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
-        Me.Guna2Button1.Size = New System.Drawing.Size(265, 42)
-        Me.Guna2Button1.TabIndex = 8
-        Me.Guna2Button1.Text = "GET STARTED"
+        Me.main_button.BackColor = System.Drawing.Color.Transparent
+        Me.main_button.BorderRadius = 5
+        Me.main_button.CheckedState.Parent = Me.main_button
+        Me.main_button.CustomImages.Parent = Me.main_button
+        Me.main_button.FillColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.main_button.Font = New System.Drawing.Font("Poppins", 10.5!)
+        Me.main_button.ForeColor = System.Drawing.Color.White
+        Me.main_button.HoverState.Parent = Me.main_button
+        Me.main_button.Location = New System.Drawing.Point(131, 325)
+        Me.main_button.Name = "main_button"
+        Me.main_button.ShadowDecoration.BorderRadius = 1
+        Me.main_button.ShadowDecoration.Depth = 4
+        Me.main_button.ShadowDecoration.Enabled = True
+        Me.main_button.ShadowDecoration.Parent = Me.main_button
+        Me.main_button.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
+        Me.main_button.Size = New System.Drawing.Size(265, 42)
+        Me.main_button.TabIndex = 8
+        Me.main_button.Text = "GET STARTED"
         '
         'Welcome
         '
@@ -125,7 +125,7 @@ Partial Class Welcome
         Me.BackgroundImage = Global.Elebrary.My.Resources.Resources.welcome_page
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(910, 504)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.main_button)
         Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
@@ -149,5 +149,5 @@ Partial Class Welcome
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents main_button As Guna.UI2.WinForms.Guna2Button
 End Class

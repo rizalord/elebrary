@@ -20,4 +20,9 @@
 
         Next
     End Sub
+
+    Private Sub btn_add_loan_Click(sender As Object, e As EventArgs) Handles btn_add_loan.Click
+        Dim alm As AddLoanModal = New AddLoanModal()
+        alm.ShowDialog()
+    End Sub
 End Class

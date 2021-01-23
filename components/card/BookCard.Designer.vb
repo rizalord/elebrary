@@ -26,9 +26,9 @@ Partial Class BookCard
         Me.label_author = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_title = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_id = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_delete = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_update = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_detail = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.SuspendLayout()
         '
@@ -76,56 +76,56 @@ Partial Class BookCard
         Me.label_id.TabIndex = 7
         Me.label_id.Text = "#1"
         '
-        'Guna2Button1
+        'btn_delete
         '
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.BorderRadius = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(820, 10)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(109, 41)
-        Me.Guna2Button1.TabIndex = 11
-        Me.Guna2Button1.Text = "Delete"
+        Me.btn_delete.BackColor = System.Drawing.Color.Transparent
+        Me.btn_delete.BorderRadius = 3
+        Me.btn_delete.CheckedState.Parent = Me.btn_delete
+        Me.btn_delete.CustomImages.Parent = Me.btn_delete
+        Me.btn_delete.FillColor = System.Drawing.Color.FromArgb(CType(CType(218, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.btn_delete.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.btn_delete.ForeColor = System.Drawing.Color.White
+        Me.btn_delete.HoverState.Parent = Me.btn_delete
+        Me.btn_delete.Location = New System.Drawing.Point(820, 10)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.ShadowDecoration.Parent = Me.btn_delete
+        Me.btn_delete.Size = New System.Drawing.Size(109, 41)
+        Me.btn_delete.TabIndex = 11
+        Me.btn_delete.Text = "Delete"
         '
-        'Guna2Button2
+        'btn_update
         '
-        Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.BorderRadius = 3
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(7, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(705, 10)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(109, 41)
-        Me.Guna2Button2.TabIndex = 12
-        Me.Guna2Button2.Text = "Update"
+        Me.btn_update.BackColor = System.Drawing.Color.Transparent
+        Me.btn_update.BorderRadius = 3
+        Me.btn_update.CheckedState.Parent = Me.btn_update
+        Me.btn_update.CustomImages.Parent = Me.btn_update
+        Me.btn_update.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(7, Byte), Integer))
+        Me.btn_update.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.btn_update.ForeColor = System.Drawing.Color.White
+        Me.btn_update.HoverState.Parent = Me.btn_update
+        Me.btn_update.Location = New System.Drawing.Point(705, 10)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.ShadowDecoration.Parent = Me.btn_update
+        Me.btn_update.Size = New System.Drawing.Size(109, 41)
+        Me.btn_update.TabIndex = 12
+        Me.btn_update.Text = "Update"
         '
-        'Guna2Button3
+        'btn_detail
         '
-        Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.BorderRadius = 3
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(184, Byte), Integer))
-        Me.Guna2Button3.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(590, 10)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(109, 41)
-        Me.Guna2Button3.TabIndex = 13
-        Me.Guna2Button3.Text = "Detail"
+        Me.btn_detail.BackColor = System.Drawing.Color.Transparent
+        Me.btn_detail.BorderRadius = 3
+        Me.btn_detail.CheckedState.Parent = Me.btn_detail
+        Me.btn_detail.CustomImages.Parent = Me.btn_detail
+        Me.btn_detail.FillColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(184, Byte), Integer))
+        Me.btn_detail.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.btn_detail.ForeColor = System.Drawing.Color.White
+        Me.btn_detail.HoverState.Parent = Me.btn_detail
+        Me.btn_detail.Location = New System.Drawing.Point(590, 10)
+        Me.btn_detail.Name = "btn_detail"
+        Me.btn_detail.ShadowDecoration.Parent = Me.btn_detail
+        Me.btn_detail.Size = New System.Drawing.Size(109, 41)
+        Me.btn_detail.TabIndex = 13
+        Me.btn_detail.Text = "Detail"
         '
         'Guna2Panel5
         '
@@ -145,9 +145,9 @@ Partial Class BookCard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.Guna2Panel5)
-        Me.Controls.Add(Me.Guna2Button3)
-        Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.btn_detail)
+        Me.Controls.Add(Me.btn_update)
+        Me.Controls.Add(Me.btn_delete)
         Me.Controls.Add(Me.label_qnt)
         Me.Controls.Add(Me.label_author)
         Me.Controls.Add(Me.label_title)
@@ -163,8 +163,8 @@ Partial Class BookCard
     Friend WithEvents label_author As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_title As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_id As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_delete As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_update As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_detail As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
 End Class
