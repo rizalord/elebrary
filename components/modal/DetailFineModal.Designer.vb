@@ -230,6 +230,7 @@ Partial Class DetailFineModal
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "DetailFineModal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "DetailFineModal"
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
