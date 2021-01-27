@@ -45,8 +45,13 @@ Public NotInheritable Class EncryptHelper
         TripleDes.CreateDecryptor(),
         System.Security.Cryptography.CryptoStreamMode.Write)
 
-        decStream.Write(encryptedBytes, 0, encryptedBytes.Length)
-        decStream.FlushFinalBlock()
+        Try
+            decStream.Write(encryptedBytes, 0, encryptedBytes.Length)
+            decStream.FlushFinalBlock()
+        Catch ex As Exception
+
+        End Try
+
 
         Return System.Text.Encoding.Unicode.GetString(ms.ToArray)
     End Function

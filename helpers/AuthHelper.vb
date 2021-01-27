@@ -73,6 +73,58 @@
         Return True
     End Function
 
+    Public Function login(ByVal username As String, ByVal password As String) As Boolean
+
+        Dim match As Admin = (From admin In context.Admins Where admin.username = username Select admin).FirstOrDefault
+
+        If match IsNot Nothing Then
+
+            Dim encryptor As New EncryptHelper(password)
+
+            Dim adminPassword As String = match.password
+            Dim adminRealPassword As String = encryptor.DecryptData(adminPassword)
+
+
+            If password.Equals(adminRealPassword) = False Then
+
+                Dim loger As New LoginAttempt
+                loger.attempts = 1
+                loger.last_login = DateTime.Now
+
+                context.LoginAttempts.Add(loger)
+                context.SaveChanges()
+
+                Return False
+            End If
+
+            context.LoginAttempts.RemoveRange(context.LoginAttempts)
+            context.SaveChanges()
+
+            Return True
+
+
+        End If
+
+        Dim log As New LoginAttempt
+        log.attempts = 1
+        log.last_login = DateTime.Now
+
+        context.LoginAttempts.Add(log)
+        context.SaveChanges()
+
+        Return False
+
+    End Function
+
+    Public Function count_logs() As Integer
+        Return context.LoginAttempts.Count
+    End Function
+
+    Public Function last_login() As DateTime
+        'Return context.LoginAttempts.Last().last_login.Millisecond
+        Return context.LoginAttempts.OrderByDescending(Function(p) p.id).First.last_login
+    End Function
+
 
 
 

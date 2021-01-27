@@ -7,8 +7,6 @@
         Dim target As String = target_projects.SelectedItem.ToString().Trim()
         Dim currency As String = currencies.SelectedItem.ToString().Trim()
 
-        MsgBox(target)
-
         If username.Length = 0 Then
             MsgBox("Username cannot be blank!")
         ElseIf password.Length <= 8 Then
