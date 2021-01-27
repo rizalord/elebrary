@@ -279,6 +279,8 @@
       <DependentUpon>Welcome.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="helpers\AuthHelper.vb" />
+    <Compile Include="helpers\EncryptHelper.vb" />
     <Compile Include="Migrations\202101260656301_InitialCreate.designer.vb">
       <DependentUpon>202101260656301_InitialCreate.vb</DependentUpon>
     </Compile>
