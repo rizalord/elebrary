@@ -49,6 +49,55 @@
 
     End Function
 
+
+    Public Function SavePassword(currentpassword As String, newpassword As String, newpasswordconfirmation As String) As ReturnMessage
+
+        currentpassword = currentpassword.Trim()
+        newpassword = newpassword.Trim()
+        newpasswordconfirmation = newpasswordconfirmation.Trim()
+
+        If currentpassword.Length <= 6 Then
+            Return New ReturnMessage(False, "Current Password is too short!")
+        ElseIf newpassword.Length <= 6 Then
+            Return New ReturnMessage(False, "New Password is too short!")
+        ElseIf newpasswordconfirmation.Equals(newpassword) = False Then
+            Return New ReturnMessage(False, "New Password does'nt match!")
+        Else
+            Dim encriptor As New EncryptHelper(currentpassword)
+            Dim realCurrentPassword As String = encriptor.DecryptData(Globals.user.password)
+
+            If currentpassword.Equals(realCurrentPassword) Then
+
+                Try
+
+                    Dim newEncriptor As New EncryptHelper(newpassword)
+
+                    Dim realAdmin As Admin = (From a In context.Admins Where a.id = Globals.user.id Select a).FirstOrDefault
+                    realAdmin.password = newEncriptor.EncryptData(newpassword)
+
+                    Globals.user = realAdmin
+                    context.SaveChanges()
+
+                    Return New ReturnMessage(True, "")
+
+                Catch ex As Exception
+
+                    Return New ReturnMessage(False, "Something Wrong, Please try again later!")
+
+                End Try
+
+            Else
+
+                Return New ReturnMessage(False, "Current Password is wrong!")
+
+            End If
+
+
+        End If
+
+
+    End Function
+
     Class ReturnMessage
         Public Property status As Boolean
         Public Property message As String

@@ -42,4 +42,24 @@ Public Class ProfilePage
             Application.DoEvents()
         Loop
     End Sub
+
+    Private Sub btn_save_password_Click(sender As Object, e As EventArgs) Handles btn_save_password.Click
+        Dim result As ReturnMessage = ProfileHelper.SavePassword(currentpassword_label.Text.ToString(), newpassword_label.Text.ToString(), confirmpassword_label.Text.ToString())
+
+        If result.status Then
+
+            currentpassword_label.Text = ""
+            newpassword_label.Text = ""
+            confirmpassword_label.Text = ""
+
+            result_password.Visible = True
+            wait(1.5)
+            result_password.Visible = False
+
+        Else
+
+            MsgBox(result.message)
+
+        End If
+    End Sub
 End Class
