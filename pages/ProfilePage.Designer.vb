@@ -25,6 +25,12 @@ Partial Class ProfilePage
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -38,23 +44,18 @@ Partial Class ProfilePage
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.username_label = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.btn_save_information = New Guna.UI2.WinForms.Guna2Button()
+        Me.name_label = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.result_profile = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Panel1.SuspendLayout()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -102,6 +103,69 @@ Partial Class ProfilePage
         Me.CenterPanel.ShadowDecoration.Parent = Me.CenterPanel
         Me.CenterPanel.Size = New System.Drawing.Size(1078, 531)
         Me.CenterPanel.TabIndex = 23
+        '
+        'Guna2HtmlLabel11
+        '
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Poppins", 10.5!)
+        Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(22, 414)
+        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(54, 27)
+        Me.Guna2HtmlLabel11.TabIndex = 25
+        Me.Guna2HtmlLabel11.Text = "secure."
+        '
+        'Guna2HtmlLabel9
+        '
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Poppins", 10.5!)
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(22, 393)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(432, 27)
+        Me.Guna2HtmlLabel9.TabIndex = 24
+        Me.Guna2HtmlLabel9.Text = "Ensure your account is using a long, random password to stay"
+        '
+        'Guna2HtmlLabel10
+        '
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Poppins", 14.0!)
+        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(21, 360)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(171, 36)
+        Me.Guna2HtmlLabel10.TabIndex = 23
+        Me.Guna2HtmlLabel10.Text = "Update Password"
+        '
+        'Guna2HtmlLabel8
+        '
+        Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Poppins", 10.5!)
+        Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(21, 89)
+        Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(400, 27)
+        Me.Guna2HtmlLabel8.TabIndex = 22
+        Me.Guna2HtmlLabel8.Text = "Update your account's profile information and username."
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 14.0!)
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(20, 56)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(177, 36)
+        Me.Guna2HtmlLabel7.TabIndex = 21
+        Me.Guna2HtmlLabel7.Text = "Profile Information"
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.Location = New System.Drawing.Point(492, 677)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(516, 39)
+        Me.Guna2Panel2.TabIndex = 16
         '
         'Guna2Panel3
         '
@@ -328,10 +392,10 @@ Partial Class ProfilePage
         '
         Me.Guna2Panel10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel10.BorderRadius = 8
-        Me.Guna2Panel10.Controls.Add(Me.Guna2TextBox2)
+        Me.Guna2Panel10.Controls.Add(Me.username_label)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel5)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2Panel10.Controls.Add(Me.name_label)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Button4)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Button3)
@@ -346,33 +410,33 @@ Partial Class ProfilePage
         Me.Guna2Panel10.Size = New System.Drawing.Size(515, 250)
         Me.Guna2Panel10.TabIndex = 14
         '
-        'Guna2TextBox2
+        'username_label
         '
-        Me.Guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.Guna2TextBox2.BorderRadius = 4
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = "Rizalord"
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Roboto", 10.0!)
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(24, 132)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.Guna2TextBox2.PlaceholderText = "johndoe"
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.SelectionStart = 8
-        Me.Guna2TextBox2.ShadowDecoration.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(338, 34)
-        Me.Guna2TextBox2.TabIndex = 20
+        Me.username_label.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.username_label.BorderRadius = 4
+        Me.username_label.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.username_label.DefaultText = "Rizalord"
+        Me.username_label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.username_label.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.username_label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.username_label.DisabledState.Parent = Me.username_label
+        Me.username_label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.username_label.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.username_label.FocusedState.Parent = Me.username_label
+        Me.username_label.Font = New System.Drawing.Font("Roboto", 10.0!)
+        Me.username_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.username_label.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.username_label.HoverState.Parent = Me.username_label
+        Me.username_label.Location = New System.Drawing.Point(24, 132)
+        Me.username_label.Name = "username_label"
+        Me.username_label.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.username_label.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.username_label.PlaceholderText = "johndoe"
+        Me.username_label.SelectedText = ""
+        Me.username_label.SelectionStart = 8
+        Me.username_label.ShadowDecoration.Parent = Me.username_label
+        Me.username_label.Size = New System.Drawing.Size(338, 34)
+        Me.username_label.TabIndex = 20
         '
         'Guna2HtmlLabel3
         '
@@ -389,7 +453,8 @@ Partial Class ProfilePage
         '
         Me.Guna2Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.Guna2Panel5.BorderRadius = 8
-        Me.Guna2Panel5.Controls.Add(Me.Guna2Button5)
+        Me.Guna2Panel5.Controls.Add(Me.result_profile)
+        Me.Guna2Panel5.Controls.Add(Me.btn_save_information)
         Me.Guna2Panel5.CustomizableEdges.TopLeft = False
         Me.Guna2Panel5.CustomizableEdges.TopRight = False
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -400,49 +465,49 @@ Partial Class ProfilePage
         Me.Guna2Panel5.Size = New System.Drawing.Size(515, 50)
         Me.Guna2Panel5.TabIndex = 18
         '
-        'Guna2Button5
+        'btn_save_information
         '
-        Me.Guna2Button5.BorderRadius = 3
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.FillColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(63, Byte), Integer))
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(416, 7)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(81, 35)
-        Me.Guna2Button5.TabIndex = 0
-        Me.Guna2Button5.Text = "SAVE"
+        Me.btn_save_information.BorderRadius = 3
+        Me.btn_save_information.CheckedState.Parent = Me.btn_save_information
+        Me.btn_save_information.CustomImages.Parent = Me.btn_save_information
+        Me.btn_save_information.FillColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.btn_save_information.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_save_information.ForeColor = System.Drawing.Color.White
+        Me.btn_save_information.HoverState.Parent = Me.btn_save_information
+        Me.btn_save_information.Location = New System.Drawing.Point(416, 7)
+        Me.btn_save_information.Name = "btn_save_information"
+        Me.btn_save_information.ShadowDecoration.Parent = Me.btn_save_information
+        Me.btn_save_information.Size = New System.Drawing.Size(81, 35)
+        Me.btn_save_information.TabIndex = 0
+        Me.btn_save_information.Text = "SAVE"
         '
-        'Guna2TextBox1
+        'name_label
         '
-        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.Guna2TextBox1.BorderRadius = 4
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = "Ahmad Khamdani"
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Roboto", 10.0!)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(24, 53)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.Guna2TextBox1.PlaceholderText = "johndoe"
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.SelectionStart = 14
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(338, 34)
-        Me.Guna2TextBox1.TabIndex = 17
+        Me.name_label.BorderColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.name_label.BorderRadius = 4
+        Me.name_label.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.name_label.DefaultText = "Ahmad Khamdani"
+        Me.name_label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.name_label.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.name_label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.name_label.DisabledState.Parent = Me.name_label
+        Me.name_label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.name_label.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.name_label.FocusedState.Parent = Me.name_label
+        Me.name_label.Font = New System.Drawing.Font("Roboto", 10.0!)
+        Me.name_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.name_label.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.name_label.HoverState.Parent = Me.name_label
+        Me.name_label.Location = New System.Drawing.Point(24, 53)
+        Me.name_label.Name = "name_label"
+        Me.name_label.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.name_label.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.name_label.PlaceholderText = "johndoe"
+        Me.name_label.SelectedText = ""
+        Me.name_label.SelectionStart = 14
+        Me.name_label.ShadowDecoration.Parent = Me.name_label
+        Me.name_label.Size = New System.Drawing.Size(338, 34)
+        Me.name_label.TabIndex = 17
         '
         'Guna2HtmlLabel2
         '
@@ -527,68 +592,17 @@ Partial Class ProfilePage
         Me.Guna2Panel1.Size = New System.Drawing.Size(58, 531)
         Me.Guna2Panel1.TabIndex = 21
         '
-        'Guna2Panel2
+        'result_profile
         '
-        Me.Guna2Panel2.Location = New System.Drawing.Point(492, 677)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(516, 39)
-        Me.Guna2Panel2.TabIndex = 16
-        '
-        'Guna2HtmlLabel7
-        '
-        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 14.0!)
-        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(20, 56)
-        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(177, 36)
-        Me.Guna2HtmlLabel7.TabIndex = 21
-        Me.Guna2HtmlLabel7.Text = "Profile Information"
-        '
-        'Guna2HtmlLabel8
-        '
-        Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Poppins", 10.5!)
-        Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(21, 89)
-        Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(400, 27)
-        Me.Guna2HtmlLabel8.TabIndex = 22
-        Me.Guna2HtmlLabel8.Text = "Update your account's profile information and username."
-        '
-        'Guna2HtmlLabel9
-        '
-        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Poppins", 10.5!)
-        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(22, 393)
-        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(432, 27)
-        Me.Guna2HtmlLabel9.TabIndex = 24
-        Me.Guna2HtmlLabel9.Text = "Ensure your account is using a long, random password to stay"
-        '
-        'Guna2HtmlLabel10
-        '
-        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Poppins", 14.0!)
-        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(21, 360)
-        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(171, 36)
-        Me.Guna2HtmlLabel10.TabIndex = 23
-        Me.Guna2HtmlLabel10.Text = "Update Password"
-        '
-        'Guna2HtmlLabel11
-        '
-        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Poppins", 10.5!)
-        Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer))
-        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(22, 414)
-        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
-        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(54, 27)
-        Me.Guna2HtmlLabel11.TabIndex = 25
-        Me.Guna2HtmlLabel11.Text = "secure."
+        Me.result_profile.BackColor = System.Drawing.Color.Transparent
+        Me.result_profile.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.result_profile.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.result_profile.Location = New System.Drawing.Point(361, 13)
+        Me.result_profile.Name = "result_profile"
+        Me.result_profile.Size = New System.Drawing.Size(47, 25)
+        Me.result_profile.TabIndex = 21
+        Me.result_profile.Text = "Saved."
+        Me.result_profile.Visible = False
         '
         'ProfilePage
         '
@@ -613,6 +627,7 @@ Partial Class ProfilePage
         Me.Guna2Panel10.ResumeLayout(False)
         Me.Guna2Panel10.PerformLayout()
         Me.Guna2Panel5.ResumeLayout(False)
+        Me.Guna2Panel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -627,11 +642,11 @@ Partial Class ProfilePage
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents name_label As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents username_label As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_save_information As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -650,4 +665,5 @@ Partial Class ProfilePage
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents result_profile As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

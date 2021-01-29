@@ -9,6 +9,8 @@
 
         If username.Length = 0 Then
             MsgBox("Username cannot be blank!")
+        ElseIf InStr(username, " ") > 0 Then
+            MsgBox("Username contain empty space!")
         ElseIf password.Length <= 8 Then
             MsgBox("Password is too short! (Min: 8)")
         ElseIf password_confirmation_box.Text.Trim().Length = 0 Then

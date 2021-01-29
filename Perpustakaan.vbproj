@@ -103,6 +103,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="app\Globals.vb" />
     <Compile Include="components\card\AdminCard.Designer.vb">
       <DependentUpon>AdminCard.vb</DependentUpon>
     </Compile>
@@ -281,6 +282,7 @@
     </Compile>
     <Compile Include="helpers\AuthHelper.vb" />
     <Compile Include="helpers\EncryptHelper.vb" />
+    <Compile Include="helpers\ProfileHelper.vb" />
     <Compile Include="Migrations\202101260656301_InitialCreate.designer.vb">
       <DependentUpon>202101260656301_InitialCreate.vb</DependentUpon>
     </Compile>

@@ -1,10 +1,15 @@
 ﻿Public Class SuperAdminDashboard
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs)
 
-    End Sub
+
+    Private Property user As Admin
 
     Private Sub SuperAdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         SwitchPanel(DashboardPage)
+
+        user = Globals.user
+        setLabelName(user.fullname)
+
     End Sub
 
     Private Sub SwitchPanel(ByVal panel As Form)
@@ -37,7 +42,7 @@
 
     Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles navbar_dropdown.SelectedIndexChanged
         If navbar_dropdown.SelectedIndex = 0 Then
-            SwitchPanel(ProfilePage)
+            SwitchPanel(New ProfilePage(AddressOf setLabelName))
             nav_dashboard.Checked = False
             nav_books.Checked = False
             nav_classes.Checked = False
@@ -54,6 +59,10 @@
             btw.Show()
             Me.Close()
         End If
+    End Sub
+
+     Sub setLabelName(name As String)
+        name_label.Text = name
     End Sub
 
 End Class

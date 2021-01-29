@@ -34,7 +34,7 @@
 
             Dim admin As Admin = New Admin()
             admin.username = username
-            admin.fullname = "Super Admin"
+            admin.fullname = username
             admin.password = encriptor.EncryptData(password)
             admin.role = saRole
             admin.created_at = DateTime.Now
@@ -99,6 +99,8 @@
 
             context.LoginAttempts.RemoveRange(context.LoginAttempts)
             context.SaveChanges()
+
+            Globals.user = match
 
             Return True
 

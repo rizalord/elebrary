@@ -25,7 +25,7 @@ Partial Class SuperAdminDashboard
         Me.components = New System.ComponentModel.Container()
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.name_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.navbar_dropdown = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.nav_admins = New Guna.UI2.WinForms.Guna2Button()
@@ -43,7 +43,7 @@ Partial Class SuperAdminDashboard
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Guna2Panel1.Controls.Add(Me.name_label)
         Me.Guna2Panel1.Controls.Add(Me.navbar_dropdown)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel5)
         Me.Guna2Panel1.Controls.Add(Me.nav_admins)
@@ -61,16 +61,17 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel1.Size = New System.Drawing.Size(1136, 59)
         Me.Guna2Panel1.TabIndex = 0
         '
-        'Guna2HtmlLabel1
+        'name_label
         '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 10.0!)
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(919, 19)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(121, 25)
-        Me.Guna2HtmlLabel1.TabIndex = 13
-        Me.Guna2HtmlLabel1.Text = "Ahmad Khamdani"
+        Me.name_label.BackColor = System.Drawing.Color.Transparent
+        Me.name_label.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.name_label.ForeColor = System.Drawing.Color.Black
+        Me.name_label.Location = New System.Drawing.Point(919, 19)
+        Me.name_label.Name = "name_label"
+        Me.name_label.Size = New System.Drawing.Size(121, 25)
+        Me.name_label.TabIndex = 13
+        Me.name_label.Text = "Ahmad Khamdani"
+        Me.name_label.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
         '
         'navbar_dropdown
         '
@@ -306,5 +307,5 @@ Partial Class SuperAdminDashboard
     Friend WithEvents MainPanel As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents navbar_dropdown As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents name_label As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
