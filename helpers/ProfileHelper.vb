@@ -28,6 +28,7 @@
 
                     Globals.user = realAdmin
                     context.SaveChanges()
+                    refresh()
 
                     Return New ReturnMessage(True, "")
 
@@ -77,6 +78,7 @@
 
                     Globals.user = realAdmin
                     context.SaveChanges()
+                    refresh()
 
                     Return New ReturnMessage(True, "")
 
@@ -102,11 +104,16 @@
         Public Property status As Boolean
         Public Property message As String
 
-        Sub New(sts As Boolean, msg As String)
+        Sub New(sts As Boolean, Optional msg As String = "")
             status = sts
             message = msg
         End Sub
     End Class
+
+    Public Sub refresh()
+        context.Dispose()
+        context = New ElebraryContext
+    End Sub
 
 
 End Module

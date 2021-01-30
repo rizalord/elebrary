@@ -41,27 +41,27 @@
 
 
     Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles navbar_dropdown.SelectedIndexChanged
+
+        nav_dashboard.Checked = False
+        nav_books.Checked = False
+        nav_classes.Checked = False
+        nav_loans.Checked = False
+        nav_admins.Checked = False
+
         If navbar_dropdown.SelectedIndex = 0 Then
             SwitchPanel(New ProfilePage(AddressOf setLabelName))
-            nav_dashboard.Checked = False
-            nav_books.Checked = False
-            nav_classes.Checked = False
-            nav_loans.Checked = False
-            nav_admins.Checked = False
-        ElseIf navbar_dropdown.SelectedIndex = 1 Then
-            nav_dashboard.Checked = False
-            nav_books.Checked = False
-            nav_classes.Checked = False
-            nav_loans.Checked = False
-            nav_admins.Checked = False
 
+        ElseIf navbar_dropdown.SelectedIndex = 1 Then
+
+            Globals.user = Nothing
             Dim btw As Welcome = New Welcome()
             btw.Show()
             Me.Close()
+
         End If
     End Sub
 
-     Sub setLabelName(name As String)
+    Sub setLabelName(name As String)
         name_label.Text = name
     End Sub
 

@@ -15,7 +15,7 @@
             MsgBox("Password is too short! (Min: 8)")
         ElseIf password_confirmation_box.Text.Trim().Length = 0 Then
             MsgBox("Password Confirmation cannot be blank!")
-        ElseIf password.Equals(password_box.Text.Trim()) = False Then
+        ElseIf password.Equals(password_confirmation_box.Text.Trim()) = False Then
             MsgBox("Password doesn't match!")
         ElseIf AuthHelper.setup(username, password, target, currency) Then
             Me.DialogResult = DialogResult.OK

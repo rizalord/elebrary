@@ -25,6 +25,8 @@ Partial Class SuperAdminDashboard
         Me.components = New System.ComponentModel.Container()
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.name_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.navbar_dropdown = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.nav_admins = New Guna.UI2.WinForms.Guna2Button()
@@ -36,8 +38,6 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.MainPanel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.name_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.SuspendLayout()
@@ -62,6 +62,28 @@ Partial Class SuperAdminDashboard
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1136, 59)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.Controls.Add(Me.name_label)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(780, 20)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.ShadowDecoration.Parent = Me.Guna2Panel6
+        Me.Guna2Panel6.Size = New System.Drawing.Size(262, 31)
+        Me.Guna2Panel6.TabIndex = 14
+        '
+        'name_label
+        '
+        Me.name_label.BackColor = System.Drawing.Color.Transparent
+        Me.name_label.Dock = System.Windows.Forms.DockStyle.Right
+        Me.name_label.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.name_label.ForeColor = System.Drawing.Color.Black
+        Me.name_label.Location = New System.Drawing.Point(141, 0)
+        Me.name_label.Name = "name_label"
+        Me.name_label.Size = New System.Drawing.Size(121, 25)
+        Me.name_label.TabIndex = 14
+        Me.name_label.Text = "Ahmad Khamdani"
+        Me.name_label.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
         '
         'navbar_dropdown
         '
@@ -266,28 +288,6 @@ Partial Class SuperAdminDashboard
         Me.MainPanel.ShadowDecoration.Parent = Me.MainPanel
         Me.MainPanel.Size = New System.Drawing.Size(1136, 600)
         Me.MainPanel.TabIndex = 1
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.Controls.Add(Me.name_label)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(780, 20)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.ShadowDecoration.Parent = Me.Guna2Panel6
-        Me.Guna2Panel6.Size = New System.Drawing.Size(262, 31)
-        Me.Guna2Panel6.TabIndex = 14
-        '
-        'name_label
-        '
-        Me.name_label.BackColor = System.Drawing.Color.Transparent
-        Me.name_label.Dock = System.Windows.Forms.DockStyle.Right
-        Me.name_label.Font = New System.Drawing.Font("Poppins", 10.0!)
-        Me.name_label.ForeColor = System.Drawing.Color.Black
-        Me.name_label.Location = New System.Drawing.Point(141, 0)
-        Me.name_label.Name = "name_label"
-        Me.name_label.Size = New System.Drawing.Size(121, 25)
-        Me.name_label.TabIndex = 14
-        Me.name_label.Text = "Ahmad Khamdani"
-        Me.name_label.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
         '
         'SuperAdminDashboard
         '

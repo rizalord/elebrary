@@ -58,6 +58,8 @@
             context.ApplicationInfos.Add(ai2)
             context.SaveChanges()
 
+            Globals.user = admin
+
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -74,6 +76,8 @@
     End Function
 
     Public Function login(ByVal username As String, ByVal password As String) As Boolean
+
+        refresh()
 
         Dim match As Admin = (From admin In context.Admins Where admin.username = username Select admin).FirstOrDefault
 
@@ -123,11 +127,59 @@
     End Function
 
     Public Function last_login() As DateTime
-        'Return context.LoginAttempts.Last().last_login.Millisecond
         Return context.LoginAttempts.OrderByDescending(Function(p) p.id).First.last_login
     End Function
 
+    Public Function createAdmin(ByVal fullname As String, ByVal username As String, ByVal password As String) As ReturnMessage
+        Try
 
+            If fullname.Length = 0 Then
+                Return New ReturnMessage(False, "Fullname cannot be blank!")
+            ElseIf username.Length = 0 Then
+                Return New ReturnMessage(False, "Username cannot be blank!")
+            ElseIf InStr(username, " ") > 0 Then
+                Return New ReturnMessage(False, "Username contain empty space!")
+            ElseIf password.Length = 0 Then
+                Return New ReturnMessage(False, "Username cannot be blank!")
+            Else
+
+                Dim findExistUsername = context.Admins.FirstOrDefault(Function(f) f.username = username)
+
+                If findExistUsername Is Nothing Then
+
+                    Dim encryptor As New EncryptHelper(password)
+
+                    Dim getNormalRole As Role = context.Roles.FirstOrDefault(Function(e) e.id = 1)
+
+                    Dim newAdmin As New Admin
+                    newAdmin.fullname = fullname
+                    newAdmin.username = username
+                    newAdmin.password = encryptor.EncryptData(password)
+                    newAdmin.role = getNormalRole
+                    newAdmin.created_at = DateTime.Now
+                    newAdmin.updated_at = DateTime.Now
+
+                    context.Admins.Add(newAdmin)
+                    context.SaveChanges()
+
+                Else
+                    Return New ReturnMessage(False, "Username already exist!")
+                End If
+
+            End If
+
+        Catch ex As Exception
+
+            Return New ReturnMessage(False, "There's something wrong, Please try again later!")
+        End Try
+
+        Return New ReturnMessage(True)
+    End Function
+
+    Public Sub refresh()
+        context.Dispose()
+        context = New ElebraryContext
+    End Sub
 
 
 End Module
