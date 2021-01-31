@@ -37,6 +37,7 @@ Partial Class ProfilePage
         Me.newpassword_label = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.result_password = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.btn_save_password = New Guna.UI2.WinForms.Guna2Button()
         Me.currentpassword_label = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -56,7 +57,6 @@ Partial Class ProfilePage
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.result_password = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Panel1.SuspendLayout()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -285,6 +285,18 @@ Partial Class ProfilePage
         Me.Guna2Panel7.ShadowDecoration.Parent = Me.Guna2Panel7
         Me.Guna2Panel7.Size = New System.Drawing.Size(515, 50)
         Me.Guna2Panel7.TabIndex = 18
+        '
+        'result_password
+        '
+        Me.result_password.BackColor = System.Drawing.Color.Transparent
+        Me.result_password.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.result_password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.result_password.Location = New System.Drawing.Point(361, 14)
+        Me.result_password.Name = "result_password"
+        Me.result_password.Size = New System.Drawing.Size(47, 25)
+        Me.result_password.TabIndex = 22
+        Me.result_password.Text = "Saved."
+        Me.result_password.Visible = False
         '
         'btn_save_password
         '
@@ -609,18 +621,6 @@ Partial Class ProfilePage
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(58, 531)
         Me.Guna2Panel1.TabIndex = 21
-        '
-        'result_password
-        '
-        Me.result_password.BackColor = System.Drawing.Color.Transparent
-        Me.result_password.Font = New System.Drawing.Font("Poppins", 10.0!)
-        Me.result_password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(123, Byte), Integer))
-        Me.result_password.Location = New System.Drawing.Point(361, 14)
-        Me.result_password.Name = "result_password"
-        Me.result_password.Size = New System.Drawing.Size(47, 25)
-        Me.result_password.TabIndex = 22
-        Me.result_password.Text = "Saved."
-        Me.result_password.Visible = False
         '
         'ProfilePage
         '

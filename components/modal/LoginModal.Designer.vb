@@ -119,7 +119,7 @@ Partial Class LoginModal
         Me.username_box.Location = New System.Drawing.Point(19, 145)
         Me.username_box.Name = "username_box"
         Me.username_box.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.username_box.PlaceholderText = "johndoe"
+        Me.username_box.PlaceholderText = ""
         Me.username_box.SelectedText = ""
         Me.username_box.ShadowDecoration.Parent = Me.username_box
         Me.username_box.Size = New System.Drawing.Size(338, 34)

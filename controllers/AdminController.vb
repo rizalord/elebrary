@@ -16,6 +16,11 @@
 
     End Function
 
+    Public Sub delete(admin As Admin)
+        db.Admins.Remove(admin)
+        db.SaveChanges()
+    End Sub
+
 
     Class AdminResponse
         Public Property data As List(Of Admin)

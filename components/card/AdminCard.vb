@@ -1,8 +1,14 @@
 ﻿Public Class AdminCard
 
-    Sub New(admin As Admin)
+    Private Property dataAdmin As Admin
+    Dim closure As Action
+
+    Sub New(admin As Admin, cls As Action)
 
         InitializeComponent()
+
+        dataAdmin = admin
+        closure = cls
 
         label_id.Text = admin.id.ToString()
         label_fullname.Text = admin.fullname
@@ -12,8 +18,11 @@
     End Sub
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
-        Dim deleteModal As DeleteAdminModal = New DeleteAdminModal()
-        deleteModal.ShowDialog()
+        Dim deleteModal As DeleteAdminModal = New DeleteAdminModal(dataAdmin)
+
+        If deleteModal.ShowDialog() = DialogResult.OK Then
+            closure()
+        End If
     End Sub
 
 End Class

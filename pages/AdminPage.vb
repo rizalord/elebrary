@@ -23,7 +23,7 @@
 
         data.data.ForEach(Sub(e)
 
-                              Dim c As AdminCard = New AdminCard(e)
+                              Dim c As AdminCard = New AdminCard(e, AddressOf RetrieveWithReset)
                               c.Dock = DockStyle.Top
                               ListPanel.Controls.Add(c)
 
@@ -53,7 +53,13 @@
             btn_next.Visible = False
         End If
 
-        label_totaldata.Text = "Showing " & ((page - 1) * perPage) + 1 & " to " & ((page - 1) * perPage) + currentCountData & " of " & total & " results"
+        If page = 1 And currentCountData = 0 Then
+            label_totaldata.Text = "Showing " & ((page - 1) * perPage) & " to " & ((page - 1) * perPage) + currentCountData & " of " & total & " results"
+        Else
+            label_totaldata.Text = "Showing " & ((page - 1) * perPage) + 1 & " to " & ((page - 1) * perPage) + currentCountData & " of " & total & " results"
+        End If
+
+
 
     End Sub
 
