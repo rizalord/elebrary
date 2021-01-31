@@ -80,7 +80,7 @@ Partial Class SuperAdminDashboard
         Me.name_label.ForeColor = System.Drawing.Color.Black
         Me.name_label.Location = New System.Drawing.Point(141, 0)
         Me.name_label.Name = "name_label"
-        Me.name_label.Size = New System.Drawing.Size(121, 25)
+        Me.name_label.Size = New System.Drawing.Size(121, 31)
         Me.name_label.TabIndex = 14
         Me.name_label.Text = "Ahmad Khamdani"
         Me.name_label.TextAlignment = System.Drawing.ContentAlignment.MiddleRight

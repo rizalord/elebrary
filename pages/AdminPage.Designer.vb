@@ -24,9 +24,13 @@ Partial Class AdminPage
     Private Sub InitializeComponent()
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_totaldata = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.btn_prev = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_next = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
@@ -61,9 +65,13 @@ Partial Class AdminPage
         '
         Me.Guna2Panel10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel10.BorderRadius = 8
-        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel7)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2Button4)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2Button3)
+        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel12)
+        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel9)
+        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel10)
+        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel11)
+        Me.Guna2Panel10.Controls.Add(Me.label_totaldata)
+        Me.Guna2Panel10.Controls.Add(Me.btn_prev)
+        Me.Guna2Panel10.Controls.Add(Me.btn_next)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel5)
         Me.Guna2Panel10.Controls.Add(Me.ListPanel)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel4)
@@ -80,58 +88,102 @@ Partial Class AdminPage
         Me.Guna2Panel10.Size = New System.Drawing.Size(1008, 456)
         Me.Guna2Panel10.TabIndex = 14
         '
-        'Guna2HtmlLabel7
+        'Guna2HtmlLabel12
         '
-        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 12.0!)
-        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(25, 408)
-        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(231, 30)
-        Me.Guna2HtmlLabel7.TabIndex = 13
-        Me.Guna2HtmlLabel7.Text = "Showing 1 to 4 of 2000 results"
+        Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(329, 114)
+        Me.Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
+        Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(85, 30)
+        Me.Guna2HtmlLabel12.TabIndex = 45
+        Me.Guna2HtmlLabel12.Text = "Username"
         '
-        'Guna2Button4
+        'Guna2HtmlLabel9
         '
-        Me.Guna2Button4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.Guna2Button4.BorderRadius = 5
-        Me.Guna2Button4.BorderThickness = 1
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomizableEdges.BottomRight = False
-        Me.Guna2Button4.CustomizableEdges.TopRight = False
-        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Image = Global.Elebrary.My.Resources.Resources.chevron_left_transparent
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(10, 12)
-        Me.Guna2Button4.Location = New System.Drawing.Point(891, 404)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(38, 36)
-        Me.Guna2Button4.TabIndex = 12
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(564, 114)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(90, 30)
+        Me.Guna2HtmlLabel9.TabIndex = 44
+        Me.Guna2HtmlLabel9.Text = "Created At"
         '
-        'Guna2Button3
+        'Guna2HtmlLabel10
         '
-        Me.Guna2Button3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.Guna2Button3.BorderRadius = 5
-        Me.Guna2Button3.BorderThickness = 1
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomizableEdges.BottomLeft = False
-        Me.Guna2Button3.CustomizableEdges.TopLeft = False
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
-        Me.Guna2Button3.ImageSize = New System.Drawing.Size(10, 12)
-        Me.Guna2Button3.Location = New System.Drawing.Point(935, 404)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(38, 36)
-        Me.Guna2Button3.TabIndex = 11
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(106, 114)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(76, 30)
+        Me.Guna2HtmlLabel10.TabIndex = 43
+        Me.Guna2HtmlLabel10.Text = "Fullname"
+        '
+        'Guna2HtmlLabel11
+        '
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(36, 114)
+        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(18, 30)
+        Me.Guna2HtmlLabel11.TabIndex = 42
+        Me.Guna2HtmlLabel11.Text = "ID"
+        '
+        'label_totaldata
+        '
+        Me.label_totaldata.BackColor = System.Drawing.Color.Transparent
+        Me.label_totaldata.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.label_totaldata.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.label_totaldata.Location = New System.Drawing.Point(25, 408)
+        Me.label_totaldata.Name = "label_totaldata"
+        Me.label_totaldata.Size = New System.Drawing.Size(231, 30)
+        Me.label_totaldata.TabIndex = 13
+        Me.label_totaldata.Text = "Showing 1 to 4 of 2000 results"
+        '
+        'btn_prev
+        '
+        Me.btn_prev.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.btn_prev.BorderRadius = 5
+        Me.btn_prev.BorderThickness = 1
+        Me.btn_prev.CheckedState.Parent = Me.btn_prev
+        Me.btn_prev.CustomImages.Parent = Me.btn_prev
+        Me.btn_prev.CustomizableEdges.BottomRight = False
+        Me.btn_prev.CustomizableEdges.TopRight = False
+        Me.btn_prev.FillColor = System.Drawing.Color.Transparent
+        Me.btn_prev.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_prev.ForeColor = System.Drawing.Color.White
+        Me.btn_prev.HoverState.Parent = Me.btn_prev
+        Me.btn_prev.Image = Global.Elebrary.My.Resources.Resources.chevron_left_bold
+        Me.btn_prev.ImageSize = New System.Drawing.Size(10, 12)
+        Me.btn_prev.Location = New System.Drawing.Point(891, 404)
+        Me.btn_prev.Name = "btn_prev"
+        Me.btn_prev.ShadowDecoration.Parent = Me.btn_prev
+        Me.btn_prev.Size = New System.Drawing.Size(38, 36)
+        Me.btn_prev.TabIndex = 12
+        '
+        'btn_next
+        '
+        Me.btn_next.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.btn_next.BorderRadius = 5
+        Me.btn_next.BorderThickness = 1
+        Me.btn_next.CheckedState.Parent = Me.btn_next
+        Me.btn_next.CustomImages.Parent = Me.btn_next
+        Me.btn_next.CustomizableEdges.BottomLeft = False
+        Me.btn_next.CustomizableEdges.TopLeft = False
+        Me.btn_next.FillColor = System.Drawing.Color.Transparent
+        Me.btn_next.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_next.ForeColor = System.Drawing.Color.White
+        Me.btn_next.HoverState.Parent = Me.btn_next
+        Me.btn_next.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
+        Me.btn_next.ImageSize = New System.Drawing.Size(10, 12)
+        Me.btn_next.Location = New System.Drawing.Point(935, 404)
+        Me.btn_next.Name = "btn_next"
+        Me.btn_next.ShadowDecoration.Parent = Me.btn_next
+        Me.btn_next.Size = New System.Drawing.Size(38, 36)
+        Me.btn_next.TabIndex = 11
         '
         'Guna2Panel5
         '
@@ -341,8 +393,8 @@ Partial Class AdminPage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel10 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_prev As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_next As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents ListPanel As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
@@ -354,5 +406,9 @@ Partial Class AdminPage
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_totaldata As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
