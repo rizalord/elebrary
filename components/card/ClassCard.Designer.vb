@@ -25,7 +25,7 @@ Partial Class ClassCard
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btn_edit = New Guna.UI2.WinForms.Guna2Button()
         Me.btn_delete = New Guna.UI2.WinForms.Guna2Button()
-        Me.label_qnt = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_tanggal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_title = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_id = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.SuspendLayout()
@@ -76,16 +76,16 @@ Partial Class ClassCard
         Me.btn_delete.TabIndex = 27
         Me.btn_delete.Text = "Delete"
         '
-        'label_qnt
+        'label_tanggal
         '
-        Me.label_qnt.BackColor = System.Drawing.Color.Transparent
-        Me.label_qnt.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_qnt.ForeColor = System.Drawing.Color.Black
-        Me.label_qnt.Location = New System.Drawing.Point(454, 17)
-        Me.label_qnt.Name = "label_qnt"
-        Me.label_qnt.Size = New System.Drawing.Size(83, 30)
-        Me.label_qnt.TabIndex = 26
-        Me.label_qnt.Text = "11 Jan 2021"
+        Me.label_tanggal.BackColor = System.Drawing.Color.Transparent
+        Me.label_tanggal.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_tanggal.ForeColor = System.Drawing.Color.Black
+        Me.label_tanggal.Location = New System.Drawing.Point(454, 17)
+        Me.label_tanggal.Name = "label_tanggal"
+        Me.label_tanggal.Size = New System.Drawing.Size(83, 30)
+        Me.label_tanggal.TabIndex = 26
+        Me.label_tanggal.Text = "11 Jan 2021"
         '
         'label_title
         '
@@ -117,7 +117,7 @@ Partial Class ClassCard
         Me.Controls.Add(Me.Guna2Panel5)
         Me.Controls.Add(Me.btn_edit)
         Me.Controls.Add(Me.btn_delete)
-        Me.Controls.Add(Me.label_qnt)
+        Me.Controls.Add(Me.label_tanggal)
         Me.Controls.Add(Me.label_title)
         Me.Controls.Add(Me.label_id)
         Me.Name = "ClassCard"
@@ -130,7 +130,7 @@ Partial Class ClassCard
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btn_edit As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btn_delete As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents label_qnt As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_tanggal As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_title As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_id As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

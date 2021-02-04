@@ -4,4 +4,24 @@
         Me.Close()
     End Sub
 
+    Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
+        Dim classname As String = box_classname.Text.Trim()
+
+        If classname.Length = 0 Then
+            MsgBox("Classname cannot be blank!")
+        Else
+
+            Dim result As ReturnMessage = ClassController.create(classname)
+
+            If result.status = True Then
+                Me.DialogResult = DialogResult.OK
+                Me.Close()
+            Else
+                MsgBox(result.message)
+            End If
+
+
+        End If
+    End Sub
+
 End Class

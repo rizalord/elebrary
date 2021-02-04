@@ -34,9 +34,9 @@ Partial Class AddClassModal
         Me.Guna2ShadowForm3 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_save = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.box_classname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -110,7 +110,7 @@ Partial Class AddClassModal
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.Guna2Panel2.BorderThickness = 1
         Me.Guna2Panel2.Controls.Add(Me.btn_cancel)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel2.Controls.Add(Me.btn_save)
         Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
         Me.Guna2Panel2.CustomizableEdges.BottomRight = False
@@ -146,21 +146,21 @@ Partial Class AddClassModal
         Me.btn_cancel.TabIndex = 1
         Me.btn_cancel.Text = "Cancel"
         '
-        'Guna2Button1
+        'btn_save
         '
-        Me.Guna2Button1.BorderRadius = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(421, 12)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(98, 30)
-        Me.Guna2Button1.TabIndex = 0
-        Me.Guna2Button1.Text = "Save"
+        Me.btn_save.BorderRadius = 3
+        Me.btn_save.CheckedState.Parent = Me.btn_save
+        Me.btn_save.CustomImages.Parent = Me.btn_save
+        Me.btn_save.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.btn_save.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.btn_save.ForeColor = System.Drawing.Color.White
+        Me.btn_save.HoverState.Parent = Me.btn_save
+        Me.btn_save.Location = New System.Drawing.Point(421, 12)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.ShadowDecoration.Parent = Me.btn_save
+        Me.btn_save.Size = New System.Drawing.Size(98, 30)
+        Me.btn_save.TabIndex = 0
+        Me.btn_save.Text = "Save"
         '
         'Guna2HtmlLabel2
         '
@@ -173,31 +173,31 @@ Partial Class AddClassModal
         Me.Guna2HtmlLabel2.TabIndex = 24
         Me.Guna2HtmlLabel2.Text = "Class Name"
         '
-        'Guna2TextBox1
+        'box_classname
         '
-        Me.Guna2TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Poppins", 10.0!)
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(207, 86)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(3, 6, 3, 6)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(253, 32)
-        Me.Guna2TextBox1.TabIndex = 25
+        Me.box_classname.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.box_classname.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.box_classname.DefaultText = ""
+        Me.box_classname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.box_classname.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.box_classname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.box_classname.DisabledState.Parent = Me.box_classname
+        Me.box_classname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.box_classname.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.box_classname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.box_classname.FocusedState.Parent = Me.box_classname
+        Me.box_classname.Font = New System.Drawing.Font("Poppins", 10.0!)
+        Me.box_classname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.box_classname.HoverState.Parent = Me.box_classname
+        Me.box_classname.Location = New System.Drawing.Point(207, 86)
+        Me.box_classname.Margin = New System.Windows.Forms.Padding(3, 6, 3, 6)
+        Me.box_classname.Name = "box_classname"
+        Me.box_classname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.box_classname.PlaceholderText = ""
+        Me.box_classname.SelectedText = ""
+        Me.box_classname.ShadowDecoration.Parent = Me.box_classname
+        Me.box_classname.Size = New System.Drawing.Size(253, 32)
+        Me.box_classname.TabIndex = 25
         '
         'AddClassModal
         '
@@ -206,7 +206,7 @@ Partial Class AddClassModal
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(544, 205)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.Controls.Add(Me.box_classname)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -228,11 +228,11 @@ Partial Class AddClassModal
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_save As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm2 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2BorderlessForm3 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm3 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents box_classname As Guna.UI2.WinForms.Guna2TextBox
 End Class
