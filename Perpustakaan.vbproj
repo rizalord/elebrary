@@ -267,6 +267,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="controllers\AdminController.vb" />
+    <Compile Include="controllers\BookController.vb" />
     <Compile Include="controllers\ClassController.vb" />
     <Compile Include="ElebraryContext.vb" />
     <Compile Include="forms\SuperAdminDashboard.Designer.vb">
