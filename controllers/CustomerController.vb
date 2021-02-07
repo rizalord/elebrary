@@ -61,7 +61,24 @@ Module CustomerController
                                                     newDb.Books.Attach(loan.book)
                                                 End Sub)
 
+                newDb.Classes.Attach(customer.identifier)
+
                 newDb.Customers.Add(customer)
+
+
+                Dim log As New AdminLog
+                log.title = customer.name + " has loan some books"
+                log.subtitle = Globals.user.fullname + " added new loan."
+                log.icon_id = 2
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                newDb.Admins.Attach(Globals.user)
+
+                newDb.AdminLogs.Add(log)
+
+
                 newDb.SaveChanges()
 
             End If
@@ -99,6 +116,20 @@ Module CustomerController
                                                              db.Books.Attach(loan.book)
                                                          End Sub)
 
+                db.Classes.Attach(retrievedCustomer.identifier)
+
+                Dim log As New AdminLog
+                log.title = Globals.user.fullname + " has edited a loan"
+                log.subtitle = Globals.user.fullname + " edited a loan with Id " + retrievedCustomer.id.ToString()
+                log.icon_id = 2
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                db.Admins.Attach(Globals.user)
+
+                db.AdminLogs.Add(log)
+
                 db.SaveChanges()
 
 
@@ -115,6 +146,19 @@ Module CustomerController
     Public Sub delete(customer As Customer)
         db.Loans.RemoveRange(customer.loans)
         db.Customers.Remove(customer)
+
+        Dim log As New AdminLog
+        log.title = Globals.user.fullname + " has deleted a loan"
+        log.subtitle = Globals.user.fullname + " deleted a loan with Id " + customer.id.ToString()
+        log.icon_id = 2
+        log.created_at = DateTime.Now
+        log.updated_at = DateTime.Now
+        log.admin = Globals.user
+
+        db.Admins.Attach(Globals.user)
+
+        db.AdminLogs.Add(log)
+
         db.SaveChanges()
     End Sub
 

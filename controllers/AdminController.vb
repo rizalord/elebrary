@@ -18,6 +18,19 @@
 
     Public Sub delete(admin As Admin)
         db.Admins.Remove(admin)
+
+        Dim log As New AdminLog
+        log.title = Globals.user.fullname + " has remove an admin"
+        log.subtitle = Globals.user.fullname + " remove " + admin.fullname + " from admins."
+        log.icon_id = 1
+        log.created_at = DateTime.Now
+        log.updated_at = DateTime.Now
+        log.admin = Globals.user
+
+        db.Admins.Attach(Globals.user)
+
+        db.AdminLogs.Add(log)
+
         db.SaveChanges()
     End Sub
 

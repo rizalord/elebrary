@@ -57,9 +57,11 @@ Partial Class DashboardPage
         Me.label_total_books = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_empty = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Panel1.SuspendLayout()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
+        Me.panel_history.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
@@ -141,6 +143,7 @@ Partial Class DashboardPage
         '
         'panel_history
         '
+        Me.panel_history.Controls.Add(Me.label_empty)
         Me.panel_history.Location = New System.Drawing.Point(28, 74)
         Me.panel_history.Name = "panel_history"
         Me.panel_history.ShadowDecoration.Parent = Me.panel_history
@@ -488,6 +491,17 @@ Partial Class DashboardPage
         Me.Guna2HtmlLabel2.TabIndex = 0
         Me.Guna2HtmlLabel2.Text = "Total" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'label_empty
+        '
+        Me.label_empty.BackColor = System.Drawing.Color.Transparent
+        Me.label_empty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
+        Me.label_empty.ForeColor = System.Drawing.Color.Black
+        Me.label_empty.Location = New System.Drawing.Point(278, 106)
+        Me.label_empty.Name = "label_empty"
+        Me.label_empty.Size = New System.Drawing.Size(48, 22)
+        Me.label_empty.TabIndex = 11
+        Me.label_empty.Text = "Empty"
+        '
         'DashboardPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -506,6 +520,8 @@ Partial Class DashboardPage
         Me.CenterPanel.ResumeLayout(False)
         Me.Guna2Panel10.ResumeLayout(False)
         Me.Guna2Panel10.PerformLayout()
+        Me.panel_history.ResumeLayout(False)
+        Me.panel_history.PerformLayout()
         Me.Guna2Panel9.ResumeLayout(False)
         Me.Guna2Panel9.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
@@ -556,4 +572,5 @@ Partial Class DashboardPage
     Friend WithEvents label_popular_time As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents panel_history As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel17 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_empty As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

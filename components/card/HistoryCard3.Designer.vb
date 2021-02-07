@@ -22,11 +22,11 @@ Partial Class HistoryCard3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.subtitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.title = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_subtitle = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_title = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.date_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_date = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -35,31 +35,31 @@ Partial Class HistoryCard3
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'subtitle
+        'label_subtitle
         '
-        Me.subtitle.BackColor = System.Drawing.Color.Transparent
-        Me.subtitle.Font = New System.Drawing.Font("Roboto Medium", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.subtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.subtitle.Location = New System.Drawing.Point(11, 43)
-        Me.subtitle.Name = "subtitle"
-        Me.subtitle.Size = New System.Drawing.Size(274, 19)
-        Me.subtitle.TabIndex = 1
-        Me.subtitle.Text = "David has been added as admin by Master."
+        Me.label_subtitle.BackColor = System.Drawing.Color.Transparent
+        Me.label_subtitle.Font = New System.Drawing.Font("Roboto Medium", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_subtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.label_subtitle.Location = New System.Drawing.Point(11, 43)
+        Me.label_subtitle.Name = "label_subtitle"
+        Me.label_subtitle.Size = New System.Drawing.Size(274, 19)
+        Me.label_subtitle.TabIndex = 1
+        Me.label_subtitle.Text = "David has been added as admin by Master."
         '
-        'title
+        'label_title
         '
-        Me.title.BackColor = System.Drawing.Color.Transparent
-        Me.title.Font = New System.Drawing.Font("Roboto Medium", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.title.Location = New System.Drawing.Point(11, 13)
-        Me.title.Name = "title"
-        Me.title.Size = New System.Drawing.Size(174, 25)
-        Me.title.TabIndex = 0
-        Me.title.Text = "David join as Admin"
+        Me.label_title.BackColor = System.Drawing.Color.Transparent
+        Me.label_title.Font = New System.Drawing.Font("Roboto Medium", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_title.Location = New System.Drawing.Point(11, 13)
+        Me.label_title.Name = "label_title"
+        Me.label_title.Size = New System.Drawing.Size(174, 25)
+        Me.label_title.TabIndex = 0
+        Me.label_title.Text = "David join as Admin"
         '
         'Guna2Panel2
         '
-        Me.Guna2Panel2.Controls.Add(Me.subtitle)
-        Me.Guna2Panel2.Controls.Add(Me.title)
+        Me.Guna2Panel2.Controls.Add(Me.label_subtitle)
+        Me.Guna2Panel2.Controls.Add(Me.label_title)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.Location = New System.Drawing.Point(75, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
@@ -69,7 +69,7 @@ Partial Class HistoryCard3
         '
         'Guna2Panel3
         '
-        Me.Guna2Panel3.Controls.Add(Me.date_label)
+        Me.Guna2Panel3.Controls.Add(Me.label_date)
         Me.Guna2Panel3.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Guna2Panel3.Location = New System.Drawing.Point(462, 0)
@@ -78,16 +78,16 @@ Partial Class HistoryCard3
         Me.Guna2Panel3.Size = New System.Drawing.Size(151, 75)
         Me.Guna2Panel3.TabIndex = 8
         '
-        'date_label
+        'label_date
         '
-        Me.date_label.BackColor = System.Drawing.Color.Transparent
-        Me.date_label.Font = New System.Drawing.Font("Roboto Medium", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.date_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.date_label.Location = New System.Drawing.Point(53, 30)
-        Me.date_label.Name = "date_label"
-        Me.date_label.Size = New System.Drawing.Size(66, 15)
-        Me.date_label.TabIndex = 2
-        Me.date_label.Text = "05 Juni 2021"
+        Me.label_date.BackColor = System.Drawing.Color.Transparent
+        Me.label_date.Font = New System.Drawing.Font("Roboto Medium", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_date.ForeColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.label_date.Location = New System.Drawing.Point(53, 30)
+        Me.label_date.Name = "label_date"
+        Me.label_date.Size = New System.Drawing.Size(66, 15)
+        Me.label_date.TabIndex = 2
+        Me.label_date.Text = "05 Juni 2021"
         '
         'Guna2Panel4
         '
@@ -140,11 +140,11 @@ Partial Class HistoryCard3
 
     End Sub
 
-    Friend WithEvents subtitle As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents title As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_subtitle As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_title As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents date_label As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_date As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel

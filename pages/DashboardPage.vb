@@ -9,43 +9,6 @@
     End Sub
 
     Private Sub Guna2Panel16_Paint(sender As Object, e As PaintEventArgs) Handles panel_history.Paint
-        Dim ids As Integer() = {3, 2, 1}
-        Dim titles As String() = {"David join as Admin", "David join as Admin", "David join as Admin"}
-        Dim subtitles As String() = {"David has been added as admin by Master.", "David has been added as admin by Master.", "David has been added as admin by Master."}
-        Dim dates As String() = {"05 Juni 2021", "04 April 2021", "01 January 2021"}
-
-        For i As Integer = 0 To 2
-            SetHistoryById(ids(i), titles(i), subtitles(i), dates(i))
-        Next
-    End Sub
-
-    Private Sub SetHistoryById(ByVal id As Integer, ByVal title As String, ByVal subtitle As String, ByVal datelabel As String)
-        If id = 1 Then
-            Dim c As HistoryCard1 = New HistoryCard1
-            c.Dock = DockStyle.Top
-            c.title.Text = title
-            c.subtitle.Text = subtitle
-            c.date_label.Text = datelabel
-            panel_history.Controls.Add(c)
-        ElseIf id = 2 Then
-            Dim c As HistoryCard2 = New HistoryCard2
-            c.Dock = DockStyle.Top
-            c.title.Text = title
-            c.subtitle.Text = subtitle
-            c.date_label.Text = datelabel
-            panel_history.Controls.Add(c)
-        ElseIf id = 3 Then
-            Dim c As HistoryCard3 = New HistoryCard3
-            c.Dock = DockStyle.Top
-            c.title.Text = title
-            c.subtitle.Text = subtitle
-            c.date_label.Text = datelabel
-            panel_history.Controls.Add(c)
-        End If
-
-    End Sub
-
-    Private Sub DashboardPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim db As New ElebraryContext
 
@@ -58,6 +21,7 @@
         Dim featuredBook As Book = db.Books.Where(Function(book) book.is_featured = True).FirstOrDefault()
         Dim popularBookId As Integer = db.Loans.Include("book").GroupBy(Function(loan) loan.book.id).OrderByDescending(Function(loan) loan.Count()).Take(1).Select(Function(loan) loan.Key).FirstOrDefault()
         Dim popularBook As Book = db.Books.Where(Function(book) book.id = popularBookId).FirstOrDefault()
+        Dim popularCount As Integer = db.Loans.Where(Function(loan) loan.book.id = popularBookId).Count()
 
         Dim lastWeek As Date = DateTime.Now.Date.AddDays(-7)
 
@@ -77,8 +41,10 @@
 
         If popularBook Is Nothing Then
             label_popular_name.Text = "-"
+            label_popular_time.Text = "-"
         Else
             label_popular_name.Text = popularBook.title
+            label_popular_time.Text = "Borrowed " + popularCount.ToString() + " times"
         End If
 
         If recentlyBook Is Nothing Then
@@ -87,7 +53,47 @@
             label_recently_book.Text = recentlyBook.title
         End If
 
+        panel_history.Controls.Clear()
 
+        Dim logs As List(Of AdminLog) = db.AdminLogs.OrderByDescending(Function(log) log.created_at).Take(3).ToList()
+        logs.Reverse()
+
+
+
+        If logs.Count = 0 Then
+            label_empty.Visible = True
+        Else
+            label_empty.Visible = False
+        End If
+
+        logs.ForEach(Sub(log) SetHistory(log))
+
+
+    End Sub
+
+    Private Sub SetHistory(ByVal log As AdminLog)
+        If log.icon_id = 1 Then
+            Dim c As HistoryCard1 = New HistoryCard1
+            c.Dock = DockStyle.Top
+            c.label_title.Text = log.title
+            c.label_subtitle.Text = log.subtitle
+            c.label_date.Text = log.created_at.ToString("dd-MM-yyyy")
+            panel_history.Controls.Add(c)
+        ElseIf log.icon_id = 2 Then
+            Dim c As HistoryCard2 = New HistoryCard2
+            c.Dock = DockStyle.Top
+            c.label_title.Text = log.title
+            c.label_subtitle.Text = log.subtitle
+            c.label_date.Text = log.created_at.ToString("dd-MM-yyyy")
+            panel_history.Controls.Add(c)
+        ElseIf log.icon_id = 3 Then
+            Dim c As HistoryCard3 = New HistoryCard3
+            c.Dock = DockStyle.Top
+            c.label_title.Text = log.title
+            c.label_subtitle.Text = log.subtitle
+            c.label_date.Text = log.created_at.ToString("dd-MM-yyyy")
+            panel_history.Controls.Add(c)
+        End If
 
     End Sub
 End Class

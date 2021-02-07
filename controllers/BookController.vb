@@ -45,6 +45,20 @@
                 db.Books.Add(book)
                 db.SaveChanges()
 
+                Dim log As New AdminLog
+                log.title = Globals.user.fullname + " has added new book"
+                log.subtitle = Globals.user.fullname + " addded book with Id " + book.id.ToString()
+                log.icon_id = 3
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                db.Admins.Attach(Globals.user)
+
+                db.AdminLogs.Add(log)
+
+                db.SaveChanges()
+
 
             End If
 
@@ -81,7 +95,21 @@
                 retrievedBook.is_featured = book.is_featured
                 retrievedBook.updated_at = DateTime.Now
 
+                Dim log As New AdminLog
+                log.title = Globals.user.fullname + " has edited a book"
+                log.subtitle = Globals.user.fullname + " edited book with Id " + book.id.ToString()
+                log.icon_id = 3
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                db.Admins.Attach(Globals.user)
+
+                db.AdminLogs.Add(log)
+
                 db.SaveChanges()
+
+
 
             End If
 
@@ -95,6 +123,19 @@
 
     Public Sub delete(kelas As Book)
         db.Books.Remove(kelas)
+
+        Dim log As New AdminLog
+        log.title = Globals.user.fullname + " has delete a book"
+        log.subtitle = Globals.user.fullname + " deleted a book with Id " + kelas.id.ToString()
+        log.icon_id = 3
+        log.created_at = DateTime.Now
+        log.updated_at = DateTime.Now
+        log.admin = Globals.user
+
+        db.Admins.Attach(Globals.user)
+
+        db.AdminLogs.Add(log)
+
         db.SaveChanges()
     End Sub
 

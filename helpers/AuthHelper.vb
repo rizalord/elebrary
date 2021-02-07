@@ -160,6 +160,19 @@
                     newAdmin.updated_at = DateTime.Now
 
                     context.Admins.Add(newAdmin)
+
+                    Dim log As New AdminLog
+                    log.title = Globals.user.fullname + " has added new admin"
+                    log.subtitle = Globals.user.fullname + " added " + newAdmin.fullname + " as new Admin."
+                    log.icon_id = 1
+                    log.created_at = DateTime.Now
+                    log.updated_at = DateTime.Now
+                    log.admin = Globals.user
+
+                    context.Admins.Attach(Globals.user)
+
+                    context.AdminLogs.Add(log)
+
                     context.SaveChanges()
 
                 Else
