@@ -25,7 +25,7 @@ Partial Class EditLoanBookModal
         Me.components = New System.ComponentModel.Container()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.panel_list = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
@@ -37,7 +37,7 @@ Partial Class EditLoanBookModal
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel3.SuspendLayout()
+        Me.panel_list.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
@@ -49,19 +49,20 @@ Partial Class EditLoanBookModal
         '
         Me.Guna2BorderlessForm1.ContainerControl = Me
         '
-        'Guna2Panel3
+        'panel_list
         '
-        Me.Guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Guna2Panel3.BorderRadius = 3
-        Me.Guna2Panel3.BorderThickness = 1
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel7)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel6)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel5)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(11, 72)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
-        Me.Guna2Panel3.Size = New System.Drawing.Size(402, 357)
-        Me.Guna2Panel3.TabIndex = 28
+        Me.panel_list.BorderColor = System.Drawing.Color.FromArgb(CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.panel_list.BorderRadius = 3
+        Me.panel_list.BorderThickness = 1
+        Me.panel_list.Controls.Add(Me.Guna2Panel7)
+        Me.panel_list.Controls.Add(Me.Guna2Panel6)
+        Me.panel_list.Controls.Add(Me.Guna2Panel5)
+        Me.panel_list.Location = New System.Drawing.Point(11, 72)
+        Me.panel_list.Name = "panel_list"
+        Me.panel_list.Padding = New System.Windows.Forms.Padding(15)
+        Me.panel_list.ShadowDecoration.Parent = Me.panel_list
+        Me.panel_list.Size = New System.Drawing.Size(402, 357)
+        Me.panel_list.TabIndex = 28
         '
         'Guna2Panel7
         '
@@ -232,12 +233,12 @@ Partial Class EditLoanBookModal
         Me.ClientSize = New System.Drawing.Size(425, 503)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Guna2Panel1)
-        Me.Controls.Add(Me.Guna2Panel3)
+        Me.Controls.Add(Me.panel_list)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "EditLoanBookModal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "EditLoanBookModal"
-        Me.Guna2Panel3.ResumeLayout(False)
+        Me.panel_list.ResumeLayout(False)
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
         Me.Guna2Panel6.ResumeLayout(False)
@@ -253,7 +254,7 @@ Partial Class EditLoanBookModal
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents panel_list As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel

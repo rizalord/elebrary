@@ -32,7 +32,7 @@ Partial Class DeleteLoanModal
         Me.Guna2ShadowForm2 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btn_cancel = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_delete = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
@@ -105,7 +105,7 @@ Partial Class DeleteLoanModal
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.Guna2Panel2.BorderThickness = 1
         Me.Guna2Panel2.Controls.Add(Me.btn_cancel)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel2.Controls.Add(Me.btn_delete)
         Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
         Me.Guna2Panel2.CustomizableEdges.BottomRight = False
@@ -141,21 +141,21 @@ Partial Class DeleteLoanModal
         Me.btn_cancel.TabIndex = 1
         Me.btn_cancel.Text = "Cancel"
         '
-        'Guna2Button1
+        'btn_delete
         '
-        Me.Guna2Button1.BorderRadius = 3
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins Light", 10.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(421, 12)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(98, 30)
-        Me.Guna2Button1.TabIndex = 0
-        Me.Guna2Button1.Text = "Delete"
+        Me.btn_delete.BorderRadius = 3
+        Me.btn_delete.CheckedState.Parent = Me.btn_delete
+        Me.btn_delete.CustomImages.Parent = Me.btn_delete
+        Me.btn_delete.FillColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.btn_delete.Font = New System.Drawing.Font("Poppins Light", 10.0!)
+        Me.btn_delete.ForeColor = System.Drawing.Color.White
+        Me.btn_delete.HoverState.Parent = Me.btn_delete
+        Me.btn_delete.Location = New System.Drawing.Point(421, 12)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.ShadowDecoration.Parent = Me.btn_delete
+        Me.btn_delete.Size = New System.Drawing.Size(98, 30)
+        Me.btn_delete.TabIndex = 0
+        Me.btn_delete.Text = "Delete"
         '
         'Guna2Panel3
         '
@@ -209,7 +209,7 @@ Partial Class DeleteLoanModal
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btn_cancel As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btn_delete As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm

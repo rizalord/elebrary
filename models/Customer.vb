@@ -8,6 +8,7 @@
     Public Property updated_at As DateTime
     Public Property return_at As DateTime
     Public Property is_returned As Boolean = False
+    Public Property loans As ICollection(Of Loan)
 
 
 End Class

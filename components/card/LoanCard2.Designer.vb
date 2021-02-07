@@ -26,8 +26,8 @@ Partial Class LoanCard2
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.btn_edit = New Guna.UI2.WinForms.Guna2Button()
         Me.btn_delete = New Guna.UI2.WinForms.Guna2Button()
-        Me.label_qnt = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.label_author = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_date = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_class = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_title = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.label_id = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.SuspendLayout()
@@ -95,27 +95,27 @@ Partial Class LoanCard2
         Me.btn_delete.TabIndex = 28
         Me.btn_delete.Text = "Delete"
         '
-        'label_qnt
+        'label_date
         '
-        Me.label_qnt.BackColor = System.Drawing.Color.Transparent
-        Me.label_qnt.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_qnt.ForeColor = System.Drawing.Color.Black
-        Me.label_qnt.Location = New System.Drawing.Point(428, 17)
-        Me.label_qnt.Name = "label_qnt"
-        Me.label_qnt.Size = New System.Drawing.Size(83, 30)
-        Me.label_qnt.TabIndex = 27
-        Me.label_qnt.Text = "11 Jan 2021"
+        Me.label_date.BackColor = System.Drawing.Color.Transparent
+        Me.label_date.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_date.ForeColor = System.Drawing.Color.Black
+        Me.label_date.Location = New System.Drawing.Point(428, 17)
+        Me.label_date.Name = "label_date"
+        Me.label_date.Size = New System.Drawing.Size(83, 30)
+        Me.label_date.TabIndex = 27
+        Me.label_date.Text = "11 Jan 2021"
         '
-        'label_author
+        'label_class
         '
-        Me.label_author.BackColor = System.Drawing.Color.Transparent
-        Me.label_author.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label_author.ForeColor = System.Drawing.Color.Black
-        Me.label_author.Location = New System.Drawing.Point(287, 17)
-        Me.label_author.Name = "label_author"
-        Me.label_author.Size = New System.Drawing.Size(65, 30)
-        Me.label_author.TabIndex = 26
-        Me.label_author.Text = "XII RPL C"
+        Me.label_class.BackColor = System.Drawing.Color.Transparent
+        Me.label_class.Font = New System.Drawing.Font("Poppins Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_class.ForeColor = System.Drawing.Color.Black
+        Me.label_class.Location = New System.Drawing.Point(287, 17)
+        Me.label_class.Name = "label_class"
+        Me.label_class.Size = New System.Drawing.Size(65, 30)
+        Me.label_class.TabIndex = 26
+        Me.label_class.Text = "XII RPL C"
         '
         'label_title
         '
@@ -148,8 +148,8 @@ Partial Class LoanCard2
         Me.Controls.Add(Me.Guna2Panel5)
         Me.Controls.Add(Me.btn_edit)
         Me.Controls.Add(Me.btn_delete)
-        Me.Controls.Add(Me.label_qnt)
-        Me.Controls.Add(Me.label_author)
+        Me.Controls.Add(Me.label_date)
+        Me.Controls.Add(Me.label_class)
         Me.Controls.Add(Me.label_title)
         Me.Controls.Add(Me.label_id)
         Me.Name = "LoanCard2"
@@ -163,8 +163,8 @@ Partial Class LoanCard2
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btn_edit As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btn_delete As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents label_qnt As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents label_author As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_date As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_class As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_title As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents label_id As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

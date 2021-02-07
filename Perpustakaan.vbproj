@@ -122,6 +122,12 @@
     <Compile Include="components\card\ClassCard.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="components\card\EditLoanBookCard.Designer.vb">
+      <DependentUpon>EditLoanBookCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\EditLoanBookCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="components\card\HistoryCard1.Designer.vb">
       <DependentUpon>HistoryCard1.vb</DependentUpon>
     </Compile>
@@ -140,6 +146,12 @@
     <Compile Include="components\card\HistoryCard3.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="components\card\LeftLoanBookCard.Designer.vb">
+      <DependentUpon>LeftLoanBookCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\LeftLoanBookCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="components\card\LoanCard1.Designer.vb">
       <DependentUpon>LoanCard1.vb</DependentUpon>
     </Compile>
@@ -156,6 +168,12 @@
       <DependentUpon>LoanCard3.vb</DependentUpon>
     </Compile>
     <Compile Include="components\card\LoanCard3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\card\RightLoanBookCard.Designer.vb">
+      <DependentUpon>RightLoanBookCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\card\RightLoanBookCard.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="components\modal\AddAdminModal.Designer.vb">
@@ -269,6 +287,7 @@
     <Compile Include="controllers\AdminController.vb" />
     <Compile Include="controllers\BookController.vb" />
     <Compile Include="controllers\ClassController.vb" />
+    <Compile Include="controllers\CustomerController.vb" />
     <Compile Include="ElebraryContext.vb" />
     <Compile Include="forms\SuperAdminDashboard.Designer.vb">
       <DependentUpon>SuperAdminDashboard.vb</DependentUpon>
@@ -286,10 +305,10 @@
     <Compile Include="helpers\AuthHelper.vb" />
     <Compile Include="helpers\EncryptHelper.vb" />
     <Compile Include="helpers\ProfileHelper.vb" />
-    <Compile Include="Migrations\202101260656301_InitialCreate.designer.vb">
-      <DependentUpon>202101260656301_InitialCreate.vb</DependentUpon>
+    <Compile Include="Migrations\202102061435150_InitialCreate.designer.vb">
+      <DependentUpon>202102061435150_InitialCreate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202101260656301_InitialCreate.vb" />
+    <Compile Include="Migrations\202102061435150_InitialCreate.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="models\Admin.vb" />
     <Compile Include="models\AdminLog.vb" />
@@ -363,6 +382,9 @@
     <EmbeddedResource Include="components\card\ClassCard.resx">
       <DependentUpon>ClassCard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\card\EditLoanBookCard.resx">
+      <DependentUpon>EditLoanBookCard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\card\HistoryCard1.resx">
       <DependentUpon>HistoryCard1.vb</DependentUpon>
     </EmbeddedResource>
@@ -372,6 +394,9 @@
     <EmbeddedResource Include="components\card\HistoryCard3.resx">
       <DependentUpon>HistoryCard3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\card\LeftLoanBookCard.resx">
+      <DependentUpon>LeftLoanBookCard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\card\LoanCard1.resx">
       <DependentUpon>LoanCard1.vb</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\card\LoanCard3.resx">
       <DependentUpon>LoanCard3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\card\RightLoanBookCard.resx">
+      <DependentUpon>RightLoanBookCard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\AddAdminModal.resx">
       <DependentUpon>AddAdminModal.vb</DependentUpon>
@@ -441,8 +469,8 @@
     <EmbeddedResource Include="forms\Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101260656301_InitialCreate.resx">
-      <DependentUpon>202101260656301_InitialCreate.vb</DependentUpon>
+    <EmbeddedResource Include="Migrations\202102061435150_InitialCreate.resx">
+      <DependentUpon>202102061435150_InitialCreate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

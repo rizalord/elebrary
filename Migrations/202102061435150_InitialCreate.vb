@@ -117,13 +117,13 @@ Namespace Migrations
                         .created_at = c.DateTime(nullable := False),
                         .updated_at = c.DateTime(nullable := False),
                         .book_id = c.Int(),
-                        .customer_id = c.Int()
+                        .Customer_id = c.Int()
                     }) _
                 .PrimaryKey(Function(t) t.id) _
                 .ForeignKey("dbo.Books", Function(t) t.book_id) _
-                .ForeignKey("dbo.Customers", Function(t) t.customer_id) _
+                .ForeignKey("dbo.Customers", Function(t) t.Customer_id) _
                 .Index(Function(t) t.book_id) _
-                .Index(Function(t) t.customer_id)
+                .Index(Function(t) t.Customer_id)
             
             CreateTable(
                 "dbo.LoginAttempts",
@@ -138,12 +138,12 @@ Namespace Migrations
         End Sub
         
         Public Overrides Sub Down()
-            DropForeignKey("dbo.Loans", "customer_id", "dbo.Customers")
+            DropForeignKey("dbo.Loans", "Customer_id", "dbo.Customers")
             DropForeignKey("dbo.Loans", "book_id", "dbo.Books")
             DropForeignKey("dbo.Customers", "identifier_id", "dbo.Kelas")
             DropForeignKey("dbo.AdminLogs", "admin_id", "dbo.Admins")
             DropForeignKey("dbo.Admins", "role_id", "dbo.Roles")
-            DropIndex("dbo.Loans", New String() { "customer_id" })
+            DropIndex("dbo.Loans", New String() { "Customer_id" })
             DropIndex("dbo.Loans", New String() { "book_id" })
             DropIndex("dbo.Customers", New String() { "identifier_id" })
             DropIndex("dbo.Admins", New String() { "role_id" })

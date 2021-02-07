@@ -14,12 +14,12 @@
             MsgBox("Username cannot be blank!")
         ElseIf password.Length = 0 Then
             MsgBox("Password cannot be blank!")
-        ElseIf captchaInput.Length = 0 Then
-            MsgBox("Captcha cannot be blank!")
-        ElseIf captchaInput.Equals(captchaText) = False Then
-            'password_box.Text = ""
-            captcha_box.Text = ""
-            suffel_captcha()
+            'ElseIf captchaInput.Length = 0 Then
+            '    MsgBox("Captcha cannot be blank!")
+            'ElseIf captchaInput.Equals(captchaText) = False Then
+            '    'password_box.Text = ""
+            '    captcha_box.Text = ""
+            '    suffel_captcha()
         Else
 
             Dim count As Integer = AuthHelper.count_logs

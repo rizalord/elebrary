@@ -37,9 +37,9 @@ Partial Class DetailFineModal
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_fine = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_day = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.label_total = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -181,38 +181,38 @@ Partial Class DetailFineModal
         Me.Guna2HtmlLabel4.TabIndex = 21
         Me.Guna2HtmlLabel4.Text = "Total:"
         '
-        'Guna2HtmlLabel5
+        'label_fine
         '
-        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(155, 85)
-        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(107, 30)
-        Me.Guna2HtmlLabel5.TabIndex = 22
-        Me.Guna2HtmlLabel5.Text = "Rp. 3000,00"
+        Me.label_fine.BackColor = System.Drawing.Color.Transparent
+        Me.label_fine.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.label_fine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.label_fine.Location = New System.Drawing.Point(155, 85)
+        Me.label_fine.Name = "label_fine"
+        Me.label_fine.Size = New System.Drawing.Size(107, 30)
+        Me.label_fine.TabIndex = 22
+        Me.label_fine.Text = "Rp. 3000,00"
         '
-        'Guna2HtmlLabel6
+        'label_day
         '
-        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(155, 121)
-        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(13, 30)
-        Me.Guna2HtmlLabel6.TabIndex = 23
-        Me.Guna2HtmlLabel6.Text = "2"
+        Me.label_day.BackColor = System.Drawing.Color.Transparent
+        Me.label_day.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.label_day.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.label_day.Location = New System.Drawing.Point(155, 121)
+        Me.label_day.Name = "label_day"
+        Me.label_day.Size = New System.Drawing.Size(13, 30)
+        Me.label_day.TabIndex = 23
+        Me.label_day.Text = "2"
         '
-        'Guna2HtmlLabel7
+        'label_total
         '
-        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(155, 156)
-        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(107, 30)
-        Me.Guna2HtmlLabel7.TabIndex = 24
-        Me.Guna2HtmlLabel7.Text = "Rp. 6000,00"
+        Me.label_total.BackColor = System.Drawing.Color.Transparent
+        Me.label_total.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.label_total.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.label_total.Location = New System.Drawing.Point(155, 156)
+        Me.label_total.Name = "label_total"
+        Me.label_total.Size = New System.Drawing.Size(107, 30)
+        Me.label_total.TabIndex = 24
+        Me.label_total.Text = "Rp. 6000,00"
         '
         'DetailFineModal
         '
@@ -220,9 +220,9 @@ Partial Class DetailFineModal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(325, 270)
-        Me.Controls.Add(Me.Guna2HtmlLabel7)
-        Me.Controls.Add(Me.Guna2HtmlLabel6)
-        Me.Controls.Add(Me.Guna2HtmlLabel5)
+        Me.Controls.Add(Me.label_total)
+        Me.Controls.Add(Me.label_day)
+        Me.Controls.Add(Me.label_fine)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
@@ -252,9 +252,9 @@ Partial Class DetailFineModal
     Friend WithEvents Guna2ShadowForm2 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2BorderlessForm3 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2ShadowForm3 As Guna.UI2.WinForms.Guna2ShadowForm
-    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_total As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_day As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents label_fine As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
