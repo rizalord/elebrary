@@ -31,6 +31,9 @@
                 Return New ReturnMessage(False, "Stock must greater than 0!")
             Else
 
+                Globals.books.Clear()
+                Globals.booksQuantity.Clear()
+
 
                 Dim book As New Book
                 book.title = title
@@ -84,6 +87,9 @@
             ElseIf book.stock <= 0 Then
                 Return New ReturnMessage(False, "Stock must greater than 0!")
             Else
+
+                Globals.books.Clear()
+                Globals.booksQuantity.Clear()
 
 
                 Dim retrievedBook As Book = db.Books.Where(Function(e) e.id = book.id).FirstOrDefault()

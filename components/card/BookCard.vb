@@ -31,11 +31,23 @@
     End Sub
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
-        Dim dbm As DeleteBookModal = New DeleteBookModal(dataBuku)
 
-        If dbm.ShowDialog() = DialogResult.OK Then
-            closure()
+        Dim db As New ElebraryContext
+
+        Dim count As Integer = db.Customers.Include("loans").Include("loans.book").Where(Function(customer) customer.is_returned = False).SelectMany(Function(customer) customer.loans).Where(Function(loan) loan.book.id = dataBuku.id).Count()
+
+        If count > 0 Then
+            MsgBox("Book are still being borrowed, it cannot be deleted!")
+        Else
+
+            Dim dbm As DeleteBookModal = New DeleteBookModal(dataBuku)
+
+            If dbm.ShowDialog() = DialogResult.OK Then
+                closure()
+            End If
+
         End If
+
     End Sub
 
 End Class
