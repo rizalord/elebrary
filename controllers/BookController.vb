@@ -1,5 +1,9 @@
 ﻿Module BookController
-    Private Property db As New ElebraryContext
+    Private Property db As ElebraryContext
+
+    Sub New()
+        db = Globals.globalDb
+    End Sub
 
     Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4) As BookResponse
 
@@ -11,6 +15,7 @@
         Dim totalData As Integer = db.Books.Count()
 
         listData.Reverse()
+
 
         Return New BookResponse(listData, isNext, totalData)
 
@@ -91,7 +96,6 @@
                 Globals.books.Clear()
                 Globals.booksQuantity.Clear()
 
-
                 Dim retrievedBook As Book = db.Books.Where(Function(e) e.id = book.id).FirstOrDefault()
                 retrievedBook.title = book.title
                 retrievedBook.author = book.author
@@ -143,6 +147,12 @@
         db.AdminLogs.Add(log)
 
         db.SaveChanges()
+    End Sub
+
+    Private Sub dispose()
+        db.Dispose()
+        db = Nothing
+        db = New ElebraryContext
     End Sub
 
 

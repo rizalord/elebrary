@@ -1,7 +1,11 @@
 ﻿Imports System.Data.Entity
 
 Module CustomerController
-    Private Property db As New ElebraryContext
+    Private Property db As ElebraryContext
+
+    Sub New()
+        db = Globals.globalDb
+    End Sub
 
     Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4) As CustomerResponse
 
@@ -41,6 +45,16 @@ Module CustomerController
                                   loan.created_at = DateTime.Now
                                   loan.updated_at = DateTime.Now
                                   loans.Add(loan)
+
+                                  If isReturned = False Then
+
+                                      Dim getBook As Book = db.Books.Where(Function(book) book.id = buku.id).FirstOrDefault()
+                                      getBook.stock = getBook.stock - loan.quantity
+
+                                      db.SaveChanges()
+                                      db.Entry(getBook).Reload()
+
+                                  End If
 
                               End Sub)
 
@@ -91,7 +105,7 @@ Module CustomerController
         Return New ReturnMessage(True)
     End Function
 
-    Public Function update(ByVal customer As Customer) As ReturnMessage
+    Public Function update(ByVal customer As Customer, ByVal prevReturned As Boolean) As ReturnMessage
         Try
 
             If customer.name.Length = 0 Then
@@ -104,6 +118,7 @@ Module CustomerController
 
 
                 Dim retrievedCustomer As Customer = db.Customers.Where(Function(e) e.id = customer.id).FirstOrDefault()
+
                 retrievedCustomer.name = customer.name
                 retrievedCustomer.address = customer.address
                 retrievedCustomer.identifier = db.Classes.Where(Function(e) e.name = customer.identifier.name).FirstOrDefault()
@@ -112,9 +127,29 @@ Module CustomerController
                 retrievedCustomer.return_at = customer.return_at
                 retrievedCustomer.updated_at = DateTime.Now
 
+
+
                 retrievedCustomer.loans.ToList().ForEach(Sub(loan)
-                                                             db.Books.Attach(loan.book)
+
+                                                             If prevReturned = False And customer.is_returned = True Then
+
+                                                                 Dim getBook As Book = db.Books.Where(Function(book) book.id = loan.book.id).FirstOrDefault()
+                                                                 getBook.stock = getBook.stock + loan.quantity
+
+                                                                 db.SaveChanges()
+
+                                                             ElseIf prevReturned = True And customer.is_returned = False Then
+
+                                                                 Dim getBook As Book = db.Books.Where(Function(book) book.id = loan.book.id).FirstOrDefault()
+                                                                 getBook.stock = getBook.stock - loan.quantity
+
+                                                                 db.SaveChanges()
+
+                                                             End If
+
                                                          End Sub)
+
+                retrievedCustomer.loans.ToList().ForEach(Sub(loan) db.Books.Attach(loan.book))
 
                 db.Classes.Attach(retrievedCustomer.identifier)
 

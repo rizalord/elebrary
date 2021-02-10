@@ -24,7 +24,9 @@
     End Sub
 
     Private Sub nav_books_Click(sender As Object, e As EventArgs) Handles nav_books.Click
-        SwitchPanel(BookPage)
+        Dim book As New BookPage
+        book.RefreshForm()
+        SwitchPanel(book)
     End Sub
 
     Private Sub nav_loans_Click(sender As Object, e As EventArgs) Handles nav_loans.Click

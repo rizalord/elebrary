@@ -4,6 +4,8 @@
 
     Private Property classes As List(Of Kelas)
 
+    Private Property prevReturned As Boolean
+
     Sub New(customer As Customer, kelases As List(Of Kelas))
 
         InitializeComponent()
@@ -15,6 +17,7 @@
         box_fines.Value = customer.fines_per_day
         box_date_return.Value = customer.return_at
         box_returned.Checked = customer.is_returned
+        prevReturned = customer.is_returned
         kelases.ForEach(Function(data) box_class.Items.Add(data.name))
         box_class.SelectedIndex = kelases.IndexOf(kelases.Where(Function(kelas) kelas.id = customer.identifier.id).FirstOrDefault())
 
@@ -53,7 +56,7 @@
             customer.return_at = dateReturned
             customer.is_returned = isReturned
 
-            Dim result As ReturnMessage = CustomerController.update(customer)
+            Dim result As ReturnMessage = CustomerController.update(customer, prevReturned)
 
             If result.status = True Then
                 Me.DialogResult = DialogResult.OK

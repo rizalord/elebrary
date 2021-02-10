@@ -13,6 +13,7 @@
 
         Dim keyword As String = search_box.Text.Trim()
 
+
         If Char.IsLetter(e.KeyChar) Then
             keyword = keyword + e.KeyChar.ToString()
         ElseIf e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Back) Then
@@ -79,4 +80,5 @@
         Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub
+
 End Class

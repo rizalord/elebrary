@@ -4,9 +4,13 @@
     Private Property isNext As Boolean = False
     Private Property currentCountData As Integer = 0
 
-    Private Sub BookPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub RefreshForm()
         RetrieveWithReset()
     End Sub
+
+    'Private Sub BookPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    RetrieveWithReset()
+    'End Sub
 
     Private Sub RetrieveWithReset()
         page = 1
@@ -82,4 +86,7 @@
         RetrieveData()
     End Sub
 
+    Private Sub Guna2Panel10_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel10.Paint
+
+    End Sub
 End Class

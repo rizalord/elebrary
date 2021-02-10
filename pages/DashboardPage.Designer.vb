@@ -29,6 +29,7 @@ Partial Class DashboardPage
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
         Me.panel_history = New Guna.UI2.WinForms.Guna2Panel()
+        Me.label_empty = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -57,7 +58,6 @@ Partial Class DashboardPage
         Me.label_total_books = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.label_empty = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Panel1.SuspendLayout()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
@@ -149,6 +149,17 @@ Partial Class DashboardPage
         Me.panel_history.ShadowDecoration.Parent = Me.panel_history
         Me.panel_history.Size = New System.Drawing.Size(604, 234)
         Me.panel_history.TabIndex = 9
+        '
+        'label_empty
+        '
+        Me.label_empty.BackColor = System.Drawing.Color.Transparent
+        Me.label_empty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
+        Me.label_empty.ForeColor = System.Drawing.Color.Black
+        Me.label_empty.Location = New System.Drawing.Point(278, 106)
+        Me.label_empty.Name = "label_empty"
+        Me.label_empty.Size = New System.Drawing.Size(48, 22)
+        Me.label_empty.TabIndex = 11
+        Me.label_empty.Text = "Empty"
         '
         'Guna2HtmlLabel17
         '
@@ -490,17 +501,6 @@ Partial Class DashboardPage
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(43, 30)
         Me.Guna2HtmlLabel2.TabIndex = 0
         Me.Guna2HtmlLabel2.Text = "Total" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'label_empty
-        '
-        Me.label_empty.BackColor = System.Drawing.Color.Transparent
-        Me.label_empty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.label_empty.ForeColor = System.Drawing.Color.Black
-        Me.label_empty.Location = New System.Drawing.Point(278, 106)
-        Me.label_empty.Name = "label_empty"
-        Me.label_empty.Size = New System.Drawing.Size(48, 22)
-        Me.label_empty.TabIndex = 11
-        Me.label_empty.Text = "Empty"
         '
         'DashboardPage
         '
