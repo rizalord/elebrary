@@ -1,4 +1,6 @@
 ﻿Imports System.Data.Entity
+Imports System.IO
+Imports OfficeOpenXml
 
 Module CustomerController
     Private Property db As ElebraryContext
@@ -195,6 +197,112 @@ Module CustomerController
         db.AdminLogs.Add(log)
 
         db.SaveChanges()
+    End Sub
+
+    Sub Export()
+        Try
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial
+
+            Dim file As FileInfo = New FileInfo("C:\Temp\tempLoan.xlsx")
+            file.Delete()
+            file = New FileInfo("C:\Temp\tempLoan.xlsx")
+
+            Using package As New ExcelPackage(file)
+
+
+                Dim sheet As ExcelWorksheet = package.Workbook.Worksheets.Add("Main Sheet")
+
+
+                sheet.Cells("A1").Value = "NO"
+                sheet.Cells("B1").Value = "ID"
+                sheet.Cells("C1").Value = "NAME"
+                sheet.Cells("D1").Value = "ADDRESS"
+                sheet.Cells("E1").Value = "CLASS"
+                sheet.Cells("F1").Value = "FINES/DAY"
+                sheet.Cells("G1").Value = "RETURN DATE"
+                sheet.Cells("H1").Value = "IS RETURNED"
+                sheet.Cells("I1").Value = "CREATED AT"
+
+                sheet.Cells("A1:I1").Style.HorizontalAlignment = HorizontalAlignment.Center
+                sheet.Cells("A1:I1").Style.Border.Top.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A1:I1").Style.Border.Bottom.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A1:I1").Style.Border.Left.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A1:I1").Style.Border.Right.Style = Style.ExcelBorderStyle.Thin
+
+                sheet.Cells("A1:I1").Style.Font.Bold = True
+
+                sheet.Cells("A2:I2").Style.HorizontalAlignment = HorizontalAlignment.Center
+                sheet.Cells("A2:I2").Style.Border.Top.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A2:I2").Style.Border.Bottom.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A2:I2").Style.Border.Left.Style = Style.ExcelBorderStyle.Thin
+                sheet.Cells("A2:I2").Style.Border.Right.Style = Style.ExcelBorderStyle.Thin
+
+                sheet.Column(7).Width = 21
+                sheet.Column(8).Width = 15
+                sheet.Column(9).Width = 21
+
+                Dim customers As List(Of Customer) = db.Customers.Include("loans").Include("identifier").ToList()
+                customers.ForEach(Sub(e)
+
+                                      Dim index As Integer = customers.IndexOf(e) + 3
+
+                                      sheet.Cells("A" & index).Value = index - 2
+                                      sheet.Cells("A" & index).Style.HorizontalAlignment = HorizontalAlignment.Right
+
+                                      sheet.Cells("B" & index).Value = e.id
+                                      sheet.Cells("B" & index).Style.HorizontalAlignment = HorizontalAlignment.Center
+
+                                      sheet.Cells("C" & index).Value = e.name
+                                      sheet.Cells("D" & index).Value = e.address
+
+                                      sheet.Cells("E" & index).Value = e.identifier.name
+                                      sheet.Cells("E" & index).Style.HorizontalAlignment = HorizontalAlignment.Center
+
+                                      sheet.Cells("F" & index).Value = e.fines_per_day
+                                      sheet.Cells("G" & index).Value = e.return_at.ToString("MM/dd/yyyy h:mm:ss")
+                                      sheet.Cells("H" & index).Value = e.is_returned
+                                      sheet.Cells("I" & index).Value = e.created_at.ToString("MM/dd/yyyy h:mm:ss")
+
+                                      sheet.Cells("A" & index & ":I" & index).Style.Border.Top.Style = Style.ExcelBorderStyle.Thin
+                                      sheet.Cells("A" & index & ":I" & index).Style.Border.Bottom.Style = Style.ExcelBorderStyle.Thin
+                                      sheet.Cells("A" & index & ":I" & index).Style.Border.Left.Style = Style.ExcelBorderStyle.Thin
+                                      sheet.Cells("A" & index & ":I" & index).Style.Border.Right.Style = Style.ExcelBorderStyle.Thin
+
+                                  End Sub)
+
+                package.Save()
+            End Using
+
+            Using sfd As New SaveFileDialog
+
+                sfd.Filter = "Excel files (*.xlsx)|*.xlsx"
+                sfd.FilterIndex = 0
+                sfd.RestoreDirectory = True
+
+                If sfd.ShowDialog() = DialogResult.OK Then
+
+                    Dim source As String = "C:\Temp\tempLoan.xlsx"
+                    Dim destination As String = sfd.FileName
+
+                    My.Computer.FileSystem.MoveFile(source, destination)
+
+                Else
+
+                    Dim filek As FileInfo = New FileInfo("C:\Temp\tempLoan.xlsx")
+                    filek.Delete()
+
+                End If
+            End Using
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+            Dim file As FileInfo = New FileInfo("C:\Temp\tempLoan.xlsx")
+            file.Delete()
+        End Try
+
+
+
     End Sub
 
 
