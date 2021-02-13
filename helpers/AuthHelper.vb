@@ -59,6 +59,7 @@
             context.SaveChanges()
 
             Globals.user = admin
+            Globals.infos = context.ApplicationInfos.ToList()
 
 
         Catch ex As Exception
@@ -79,7 +80,7 @@
 
         refresh()
 
-        Dim match As Admin = (From admin In context.Admins Where admin.username = username Select admin).FirstOrDefault
+        Dim match As Admin = context.Admins.Include("role").Where(Function(admin) admin.username = username).FirstOrDefault()
 
         If match IsNot Nothing Then
 
@@ -105,6 +106,7 @@
             context.SaveChanges()
 
             Globals.user = match
+            Globals.infos = context.ApplicationInfos.ToList()
 
             Return True
 

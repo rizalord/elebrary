@@ -18,14 +18,26 @@
 
     Private Sub btn_edit_Click(sender As Object, e As EventArgs) Handles btn_edit.Click
 
-        Dim db As New ElebraryContext
+        If Globals.infos(0).value.Equals("General") Then
 
-        Dim classes As List(Of Kelas) = db.Classes.ToList()
+            Dim elm As New EditLoanModal2(dataCustomer)
 
-        Dim elm As EditLoanModal = New EditLoanModal(dataCustomer, classes)
+            If elm.ShowDialog() = DialogResult.OK Then
+                closure()
+            End If
 
-        If elm.ShowDialog() = DialogResult.OK Then
-            closure()
+        Else
+
+            Dim db As New ElebraryContext
+
+            Dim classes As List(Of Kelas) = db.Classes.ToList()
+
+            Dim elm As EditLoanModal = New EditLoanModal(dataCustomer, classes)
+
+            If elm.ShowDialog() = DialogResult.OK Then
+                closure()
+            End If
+
         End If
 
     End Sub

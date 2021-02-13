@@ -46,6 +46,7 @@ Partial Class AddLoanModal
         Me.btn_load_books = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.box_fines = New Guna.UI2.WinForms.Guna2NumericUpDown()
+        Me.mata_uang_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
@@ -72,7 +73,7 @@ Partial Class AddLoanModal
         Me.box_customer_address.Font = New System.Drawing.Font("Poppins", 10.0!)
         Me.box_customer_address.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.box_customer_address.HoverState.Parent = Me.box_customer_address
-        Me.box_customer_address.Location = New System.Drawing.Point(293, 150)
+        Me.box_customer_address.Location = New System.Drawing.Point(283, 150)
         Me.box_customer_address.Margin = New System.Windows.Forms.Padding(3, 6, 3, 6)
         Me.box_customer_address.Name = "box_customer_address"
         Me.box_customer_address.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -87,7 +88,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(196, 405)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(186, 405)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(76, 30)
         Me.Guna2HtmlLabel7.TabIndex = 32
@@ -101,7 +102,7 @@ Partial Class AddLoanModal
         Me.box_returned.CheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.box_returned.CheckedState.InnerColor = System.Drawing.Color.White
         Me.box_returned.CheckedState.Parent = Me.box_returned
-        Me.box_returned.Location = New System.Drawing.Point(293, 403)
+        Me.box_returned.Location = New System.Drawing.Point(283, 403)
         Me.box_returned.Name = "box_returned"
         Me.box_returned.ShadowDecoration.Parent = Me.box_returned
         Me.box_returned.Size = New System.Drawing.Size(56, 32)
@@ -117,7 +118,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(175, 343)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(165, 343)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(97, 30)
         Me.Guna2HtmlLabel6.TabIndex = 31
@@ -128,7 +129,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(189, 280)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(179, 282)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(83, 30)
         Me.Guna2HtmlLabel5.TabIndex = 29
@@ -139,7 +140,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(224, 213)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(214, 213)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(48, 30)
         Me.Guna2HtmlLabel4.TabIndex = 28
@@ -150,7 +151,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(118, 151)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(108, 151)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(154, 30)
         Me.Guna2HtmlLabel3.TabIndex = 27
@@ -161,7 +162,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(135, 88)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(125, 88)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(137, 30)
         Me.Guna2HtmlLabel2.TabIndex = 25
@@ -276,7 +277,7 @@ Partial Class AddLoanModal
         Me.box_customer_name.Font = New System.Drawing.Font("Poppins", 10.0!)
         Me.box_customer_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.box_customer_name.HoverState.Parent = Me.box_customer_name
-        Me.box_customer_name.Location = New System.Drawing.Point(293, 87)
+        Me.box_customer_name.Location = New System.Drawing.Point(283, 87)
         Me.box_customer_name.Margin = New System.Windows.Forms.Padding(3, 6, 3, 6)
         Me.box_customer_name.Name = "box_customer_name"
         Me.box_customer_name.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -299,7 +300,7 @@ Partial Class AddLoanModal
         Me.box_class.HoverState.Parent = Me.box_class
         Me.box_class.ItemHeight = 30
         Me.box_class.ItemsAppearance.Parent = Me.box_class
-        Me.box_class.Location = New System.Drawing.Point(293, 208)
+        Me.box_class.Location = New System.Drawing.Point(283, 208)
         Me.box_class.Name = "box_class"
         Me.box_class.ShadowDecoration.Parent = Me.box_class
         Me.box_class.Size = New System.Drawing.Size(297, 36)
@@ -313,7 +314,7 @@ Partial Class AddLoanModal
         Me.box_date_return.ForeColor = System.Drawing.Color.FromArgb(CType(CType(90, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(90, Byte), Integer))
         Me.box_date_return.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.box_date_return.HoverState.Parent = Me.box_date_return
-        Me.box_date_return.Location = New System.Drawing.Point(293, 341)
+        Me.box_date_return.Location = New System.Drawing.Point(283, 341)
         Me.box_date_return.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.box_date_return.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.box_date_return.Name = "box_date_return"
@@ -330,7 +331,7 @@ Partial Class AddLoanModal
         Me.btn_load_books.Font = New System.Drawing.Font("Poppins Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_load_books.ForeColor = System.Drawing.Color.White
         Me.btn_load_books.HoverState.Parent = Me.btn_load_books
-        Me.btn_load_books.Location = New System.Drawing.Point(476, 402)
+        Me.btn_load_books.Location = New System.Drawing.Point(466, 402)
         Me.btn_load_books.Name = "btn_load_books"
         Me.btn_load_books.ShadowDecoration.Parent = Me.btn_load_books
         Me.btn_load_books.Size = New System.Drawing.Size(114, 32)
@@ -342,7 +343,7 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(394, 405)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(384, 405)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
         Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(72, 30)
         Me.Guna2HtmlLabel8.TabIndex = 40
@@ -362,13 +363,24 @@ Partial Class AddLoanModal
         Me.box_fines.FocusedState.Parent = Me.box_fines
         Me.box_fines.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.box_fines.ForeColor = System.Drawing.Color.FromArgb(CType(CType(126, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.box_fines.Location = New System.Drawing.Point(293, 278)
+        Me.box_fines.Location = New System.Drawing.Point(283, 278)
         Me.box_fines.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
         Me.box_fines.Name = "box_fines"
         Me.box_fines.ShadowDecoration.Parent = Me.box_fines
         Me.box_fines.Size = New System.Drawing.Size(297, 36)
         Me.box_fines.TabIndex = 41
         Me.box_fines.UpDownButtonFillColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(238, Byte), Integer))
+        '
+        'mata_uang_label
+        '
+        Me.mata_uang_label.BackColor = System.Drawing.Color.Transparent
+        Me.mata_uang_label.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mata_uang_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.mata_uang_label.Location = New System.Drawing.Point(587, 282)
+        Me.mata_uang_label.Name = "mata_uang_label"
+        Me.mata_uang_label.Size = New System.Drawing.Size(59, 30)
+        Me.mata_uang_label.TabIndex = 42
+        Me.mata_uang_label.Text = "Rupiah"
         '
         'Guna2ImageButton1
         '
@@ -396,6 +408,7 @@ Partial Class AddLoanModal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(750, 523)
+        Me.Controls.Add(Me.mata_uang_label)
         Me.Controls.Add(Me.box_fines)
         Me.Controls.Add(Me.Guna2HtmlLabel8)
         Me.Controls.Add(Me.btn_load_books)
@@ -449,4 +462,5 @@ Partial Class AddLoanModal
     Friend WithEvents btn_load_books As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents box_date_return As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents box_fines As Guna.UI2.WinForms.Guna2NumericUpDown
+    Friend WithEvents mata_uang_label As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

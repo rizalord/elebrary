@@ -34,7 +34,7 @@ Partial Class LoanPage
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.clsLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -90,7 +90,7 @@ Partial Class LoanPage
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Guna2Panel10.Controls.Add(Me.clsLabel)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2Panel10.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel10.Controls.Add(Me.Guna2Button2)
@@ -210,16 +210,16 @@ Partial Class LoanPage
         Me.Guna2HtmlLabel5.TabIndex = 6
         Me.Guna2HtmlLabel5.Text = "Created At"
         '
-        'Guna2HtmlLabel4
+        'clsLabel
         '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 12.0!)
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(312, 116)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(46, 30)
-        Me.Guna2HtmlLabel4.TabIndex = 5
-        Me.Guna2HtmlLabel4.Text = "Class"
+        Me.clsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.clsLabel.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.clsLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.clsLabel.Location = New System.Drawing.Point(312, 116)
+        Me.clsLabel.Name = "clsLabel"
+        Me.clsLabel.Size = New System.Drawing.Size(46, 30)
+        Me.clsLabel.TabIndex = 5
+        Me.clsLabel.Text = "Class"
         '
         'Guna2HtmlLabel3
         '
@@ -355,7 +355,7 @@ Partial Class LoanPage
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents clsLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button

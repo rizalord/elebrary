@@ -5,6 +5,11 @@
     Private Property currentCountData As Integer = 0
 
     Private Sub LoanPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If Globals.infos(0).value.Equals("General") Then
+            clsLabel.Text = "ID Card"
+        End If
+
         RetrieveWithReset()
     End Sub
 
@@ -92,21 +97,42 @@
 
         Dim db As New ElebraryContext
 
-        Dim classes As List(Of Kelas) = db.Classes.ToList()
+        If Globals.infos(0).value.Equals("General") Then
 
-        If classes.Count = 0 Then
-            MsgBox("Please add some class before add new loan!")
-        ElseIf db.Books.Count = 0 Then
-            MsgBox("Please add some books before add new loan!")
-        Else
-            Dim alm As AddLoanModal = New AddLoanModal(classes)
 
-            If alm.ShowDialog() = DialogResult.OK Then
+            If db.Books.Count = 0 Then
+                MsgBox("Please add some books before add new loan!")
+            Else
+                Dim alm As New AddLoanModal2
 
-                RetrieveWithReset()
+                If alm.ShowDialog() = DialogResult.OK Then
 
+                    RetrieveWithReset()
+
+                End If
             End If
+
+        Else
+
+            Dim classes As List(Of Kelas) = db.Classes.ToList()
+
+            If classes.Count = 0 Then
+                MsgBox("Please add some class before add new loan!")
+            ElseIf db.Books.Count = 0 Then
+                MsgBox("Please add some books before add new loan!")
+            Else
+                Dim alm As AddLoanModal = New AddLoanModal(classes)
+
+                If alm.ShowDialog() = DialogResult.OK Then
+
+                    RetrieveWithReset()
+
+                End If
+            End If
+
         End If
+
+
 
 
     End Sub
@@ -128,4 +154,5 @@
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
         RetrieveWithReset(Guna2TextBox1.Text)
     End Sub
+
 End Class

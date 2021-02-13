@@ -224,6 +224,12 @@
     <Compile Include="components\modal\AddLoanModal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="components\modal\AddLoanModal2.Designer.vb">
+      <DependentUpon>AddLoanModal2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\AddLoanModal2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="components\modal\DeleteAdminModal.Designer.vb">
       <DependentUpon>DeleteAdminModal.vb</DependentUpon>
     </Compile>
@@ -282,6 +288,12 @@
       <DependentUpon>EditLoanModal.vb</DependentUpon>
     </Compile>
     <Compile Include="components\modal\EditLoanModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="components\modal\EditLoanModal2.Designer.vb">
+      <DependentUpon>EditLoanModal2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="components\modal\EditLoanModal2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="components\modal\LoginModal.Designer.vb">
@@ -439,6 +451,9 @@
     <EmbeddedResource Include="components\modal\AddLoanModal.resx">
       <DependentUpon>AddLoanModal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\AddLoanModal2.resx">
+      <DependentUpon>AddLoanModal2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\modal\DeleteAdminModal.resx">
       <DependentUpon>DeleteAdminModal.vb</DependentUpon>
     </EmbeddedResource>
@@ -468,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\EditLoanModal.resx">
       <DependentUpon>EditLoanModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\modal\EditLoanModal2.resx">
+      <DependentUpon>EditLoanModal2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\modal\LoginModal.resx">
       <DependentUpon>LoginModal.vb</DependentUpon>

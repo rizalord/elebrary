@@ -21,6 +21,12 @@
         kelases.ForEach(Function(data) box_class.Items.Add(data.name))
         box_class.SelectedIndex = kelases.IndexOf(kelases.Where(Function(kelas) kelas.id = customer.identifier.id).FirstOrDefault())
 
+        If Globals.infos(1).value.Equals("USD") Then
+            mata_uang_label.Text = "$"
+        Else
+            mata_uang_label.Text = "Rupiah"
+        End If
+
     End Sub
 
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
@@ -67,5 +73,77 @@
 
 
         End If
+    End Sub
+
+    Private Sub box_fines_ValueChanged(sender As Object, e As EventArgs) Handles box_fines.ValueChanged
+
+    End Sub
+
+    Private Sub box_date_return_ValueChanged(sender As Object, e As EventArgs) Handles box_date_return.ValueChanged
+
+    End Sub
+
+    Private Sub box_class_SelectedIndexChanged(sender As Object, e As EventArgs) Handles box_class.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub box_customer_name_TextChanged(sender As Object, e As EventArgs) Handles box_customer_name.TextChanged
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel8_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel8.Click
+
+    End Sub
+
+    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel2.Click
+
+    End Sub
+
+    Private Sub box_customer_address_TextChanged(sender As Object, e As EventArgs) Handles box_customer_address.TextChanged
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel7_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel7.Click
+
+    End Sub
+
+    Private Sub box_returned_CheckedChanged(sender As Object, e As EventArgs) Handles box_returned.CheckedChanged
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel6_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel6.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel5.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
+
+    End Sub
+
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel9_Click(sender As Object, e As EventArgs) Handles mata_uang_label.Click
+
+    End Sub
+
+    Private Sub Guna2ImageButton1_Click(sender As Object, e As EventArgs) Handles Guna2ImageButton1.Click
+
     End Sub
 End Class

@@ -107,6 +107,94 @@ Module CustomerController
         Return New ReturnMessage(True)
     End Function
 
+    Public Function create2(ByVal customerName As String, ByVal customerAddress As String, ByVal idCard As String, ByVal finesPerDay As Integer, ByVal dateReturned As DateTime, ByVal isReturned As Boolean, books As List(Of Book), booksQuantity As List(Of Integer)) As ReturnMessage
+        Try
+
+            If customerName.Length = 0 Then
+                MsgBox("Customer Name cannot be blank!")
+            ElseIf customerAddress.Length = 0 Then
+                MsgBox("Customer Address cannot be blank!")
+            ElseIf idCard.Length = 0 Then
+                MsgBox("ID Card cannot be blank!")
+            ElseIf finesPerDay = 0 Then
+                MsgBox("Fines must greater than 0!")
+            ElseIf Globals.books.Count = 0 Then
+                MsgBox("Books to be borrowed cannot be empty!")
+            Else
+
+                Dim loans As New List(Of Loan)
+
+                books.ForEach(Sub(buku)
+
+                                  Dim loan As New Loan
+                                  loan.book = buku
+                                  loan.quantity = Globals.booksQuantity.ElementAt(Globals.books.IndexOf(buku))
+                                  loan.created_at = DateTime.Now
+                                  loan.updated_at = DateTime.Now
+                                  loans.Add(loan)
+
+                                  If isReturned = False Then
+
+                                      Dim getBook As Book = db.Books.Where(Function(book) book.id = buku.id).FirstOrDefault()
+                                      getBook.stock = getBook.stock - loan.quantity
+
+                                      db.SaveChanges()
+                                      db.Entry(getBook).Reload()
+
+                                  End If
+
+                              End Sub)
+
+                Dim identifier As New Kelas
+                identifier.name = idCard
+                identifier.created_at = DateTime.Now
+                identifier.updated_at = DateTime.Now
+
+                Dim customer As New Customer
+                customer.name = customerName
+                customer.address = customerAddress
+                customer.identifier = identifier
+                customer.fines_per_day = finesPerDay
+                customer.is_returned = isReturned
+                customer.return_at = dateReturned
+                customer.loans = loans
+                customer.created_at = DateTime.Now
+                customer.updated_at = DateTime.Now
+
+                Dim newDb As New ElebraryContext
+
+                customer.loans.ToList().ForEach(Sub(loan)
+                                                    newDb.Books.Attach(loan.book)
+                                                End Sub)
+
+                newDb.Customers.Add(customer)
+
+
+                Dim log As New AdminLog
+                log.title = customer.name + " has loan some books"
+                log.subtitle = Globals.user.fullname + " added new loan."
+                log.icon_id = 2
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                newDb.Admins.Attach(Globals.user)
+
+                newDb.AdminLogs.Add(log)
+
+
+                newDb.SaveChanges()
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.InnerException.Message)
+            Return New ReturnMessage(False, "There's something wrong, Please try again later!")
+        End Try
+
+        Return New ReturnMessage(True)
+    End Function
+
     Public Function update(ByVal customer As Customer, ByVal prevReturned As Boolean) As ReturnMessage
         Try
 
@@ -180,11 +268,107 @@ Module CustomerController
         Return New ReturnMessage(True)
     End Function
 
+    Public Function update2(ByVal customer As Customer, ByVal prevReturned As Boolean) As ReturnMessage
+        Try
+
+            If customer.name.Length = 0 Then
+                MsgBox("Customer Name cannot be blank!")
+            ElseIf customer.address.Length = 0 Then
+                MsgBox("Customer Address cannot be blank!")
+            ElseIf customer.identifier.name.Length = 0 Then
+                MsgBox("ID Card cannot be blank!")
+            ElseIf customer.fines_per_day = 0 Then
+                MsgBox("Fines must greater than 0!")
+            Else
+
+
+                Dim retrievedCustomer As Customer = db.Customers.Where(Function(e) e.id = customer.id).FirstOrDefault()
+
+                retrievedCustomer.name = customer.name
+                retrievedCustomer.address = customer.address
+                retrievedCustomer.identifier = customer.identifier
+                retrievedCustomer.fines_per_day = customer.fines_per_day
+                retrievedCustomer.is_returned = customer.is_returned
+                retrievedCustomer.return_at = customer.return_at
+                retrievedCustomer.updated_at = DateTime.Now
+
+
+
+                retrievedCustomer.loans.ToList().ForEach(Sub(loan)
+
+                                                             If prevReturned = False And customer.is_returned = True Then
+
+                                                                 Dim getBook As Book = db.Books.Where(Function(book) book.id = loan.book.id).FirstOrDefault()
+                                                                 getBook.stock = getBook.stock + loan.quantity
+
+                                                                 db.SaveChanges()
+
+                                                             ElseIf prevReturned = True And customer.is_returned = False Then
+
+                                                                 Dim getBook As Book = db.Books.Where(Function(book) book.id = loan.book.id).FirstOrDefault()
+                                                                 getBook.stock = getBook.stock - loan.quantity
+
+                                                                 db.SaveChanges()
+
+                                                             End If
+
+                                                         End Sub)
+
+                retrievedCustomer.loans.ToList().ForEach(Sub(loan) db.Books.Attach(loan.book))
+
+                'db.Classes.Attach(retrievedCustomer.identifier)
+
+                Dim log As New AdminLog
+                log.title = Globals.user.fullname + " has edited a loan"
+                log.subtitle = Globals.user.fullname + " edited a loan with Id " + retrievedCustomer.id.ToString()
+                log.icon_id = 2
+                log.created_at = DateTime.Now
+                log.updated_at = DateTime.Now
+                log.admin = Globals.user
+
+                db.Admins.Attach(Globals.user)
+
+                db.AdminLogs.Add(log)
+
+                db.SaveChanges()
+
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.InnerException.Message)
+            Return New ReturnMessage(False, "There's something wrong, Please try again later!")
+        End Try
+
+        Return New ReturnMessage(True)
+    End Function
+
     Public Sub delete(customer As Customer)
+
+        If Globals.infos(0).value.Equals("General") Then
+            db.Classes.Remove(customer.identifier)
+        End If
+
+        If customer.is_returned = False Then
+
+            customer.loans.ToList().ForEach(Sub(loan)
+
+
+                                                Dim getBook As Book = db.Books.Where(Function(book) book.id = loan.book.id).FirstOrDefault()
+                                                getBook.stock = getBook.stock + loan.quantity
+
+                                                db.SaveChanges()
+
+                                            End Sub)
+
+        End If
+
+
         db.Loans.RemoveRange(customer.loans)
         db.Customers.Remove(customer)
 
         Dim log As New AdminLog
+
         log.title = Globals.user.fullname + " has deleted a loan"
         log.subtitle = Globals.user.fullname + " deleted a loan with Id " + customer.id.ToString()
         log.icon_id = 2
@@ -193,11 +377,11 @@ Module CustomerController
         log.admin = Globals.user
 
         db.Admins.Attach(Globals.user)
-
         db.AdminLogs.Add(log)
 
         db.SaveChanges()
-    End Sub
+
+        End Sub
 
     Sub Export()
         Try

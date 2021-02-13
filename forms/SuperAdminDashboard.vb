@@ -10,6 +10,14 @@
         user = Globals.user
         setLabelName(user.fullname)
 
+        If user.role.id = 1 Then
+            nav_admins.Visible = False
+        End If
+
+        If Globals.infos(0).value.Equals("General") Then
+            nav_classes.Visible = False
+        End If
+
     End Sub
 
     Private Sub SwitchPanel(ByVal panel As Form)

@@ -128,6 +128,7 @@ Module BookController
 
         Catch ex As Exception
 
+            MsgBox(ex.Message)
             Return New ReturnMessage(False, "There's something wrong, Please try again later!")
         End Try
 
