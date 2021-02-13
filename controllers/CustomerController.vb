@@ -402,6 +402,11 @@ Module CustomerController
                 sheet.Cells("C1").Value = "NAME"
                 sheet.Cells("D1").Value = "ADDRESS"
                 sheet.Cells("E1").Value = "CLASS"
+
+                If Globals.infos(0).value.Equals("General") Then
+                    sheet.Cells("E1").Value = "CARD ID"
+                End If
+
                 sheet.Cells("F1").Value = "FINES/DAY"
                 sheet.Cells("G1").Value = "RETURN DATE"
                 sheet.Cells("H1").Value = "IS RETURNED"

@@ -257,7 +257,7 @@ Partial Class LoanPage
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
         Me.Guna2Button2.Size = New System.Drawing.Size(138, 38)
         Me.Guna2Button2.TabIndex = 2
-        Me.Guna2Button2.Text = "Export to CSV"
+        Me.Guna2Button2.Text = "Export to Excel"
         '
         'btn_add_loan
         '
