@@ -23,6 +23,7 @@ Partial Class EditClassModal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditClassModal))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -216,6 +217,7 @@ Partial Class EditClassModal
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.box_classname)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EditClassModal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "EditClassModal"

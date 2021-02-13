@@ -23,6 +23,7 @@ Partial Class EditLoanModal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditLoanModal))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.box_fines = New Guna.UI2.WinForms.Guna2NumericUpDown()
@@ -48,8 +49,8 @@ Partial Class EditLoanModal
         Me.Guna2BorderlessForm3 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.mata_uang_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.mata_uang_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
         CType(Me.box_fines, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
@@ -379,17 +380,6 @@ Partial Class EditLoanModal
         Me.Guna2Panel1.Size = New System.Drawing.Size(750, 54)
         Me.Guna2Panel1.TabIndex = 43
         '
-        'mata_uang_label
-        '
-        Me.mata_uang_label.BackColor = System.Drawing.Color.Transparent
-        Me.mata_uang_label.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mata_uang_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
-        Me.mata_uang_label.Location = New System.Drawing.Point(587, 281)
-        Me.mata_uang_label.Name = "mata_uang_label"
-        Me.mata_uang_label.Size = New System.Drawing.Size(59, 30)
-        Me.mata_uang_label.TabIndex = 58
-        Me.mata_uang_label.Text = "Rupiah"
-        '
         'Guna2ImageButton1
         '
         Me.Guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -409,6 +399,17 @@ Partial Class EditLoanModal
         Me.Guna2ImageButton1.PressedState.Parent = Me.Guna2ImageButton1
         Me.Guna2ImageButton1.Size = New System.Drawing.Size(32, 32)
         Me.Guna2ImageButton1.TabIndex = 6
+        '
+        'mata_uang_label
+        '
+        Me.mata_uang_label.BackColor = System.Drawing.Color.Transparent
+        Me.mata_uang_label.Font = New System.Drawing.Font("Poppins Medium", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mata_uang_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.mata_uang_label.Location = New System.Drawing.Point(587, 281)
+        Me.mata_uang_label.Name = "mata_uang_label"
+        Me.mata_uang_label.Size = New System.Drawing.Size(59, 30)
+        Me.mata_uang_label.TabIndex = 58
+        Me.mata_uang_label.Text = "Rupiah"
         '
         'EditLoanModal
         '
@@ -434,6 +435,7 @@ Partial Class EditLoanModal
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EditLoanModal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "EditLoanModal"

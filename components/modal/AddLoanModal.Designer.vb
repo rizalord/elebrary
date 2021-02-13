@@ -23,6 +23,7 @@ Partial Class AddLoanModal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddLoanModal))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.box_customer_address = New Guna.UI2.WinForms.Guna2TextBox()
@@ -37,6 +38,7 @@ Partial Class AddLoanModal
         Me.btn_save = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowForm2 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -47,7 +49,6 @@ Partial Class AddLoanModal
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.box_fines = New Guna.UI2.WinForms.Guna2NumericUpDown()
         Me.mata_uang_label = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ImageButton1 = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.box_fines, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,6 +247,26 @@ Partial Class AddLoanModal
         Me.Guna2Panel1.Size = New System.Drawing.Size(750, 54)
         Me.Guna2Panel1.TabIndex = 23
         '
+        'Guna2ImageButton1
+        '
+        Me.Guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2ImageButton1.CheckedState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
+        Me.Guna2ImageButton1.CheckedState.ImageSize = New System.Drawing.Size(19, 19)
+        Me.Guna2ImageButton1.CheckedState.Parent = Me.Guna2ImageButton1
+        Me.Guna2ImageButton1.HoverState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
+        Me.Guna2ImageButton1.HoverState.ImageSize = New System.Drawing.Size(19, 19)
+        Me.Guna2ImageButton1.HoverState.Parent = Me.Guna2ImageButton1
+        Me.Guna2ImageButton1.Image = Global.Elebrary.My.Resources.Resources.close_icon
+        Me.Guna2ImageButton1.ImageRotate = 0!
+        Me.Guna2ImageButton1.ImageSize = New System.Drawing.Size(19, 19)
+        Me.Guna2ImageButton1.Location = New System.Drawing.Point(708, 11)
+        Me.Guna2ImageButton1.Name = "Guna2ImageButton1"
+        Me.Guna2ImageButton1.PressedState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
+        Me.Guna2ImageButton1.PressedState.ImageSize = New System.Drawing.Size(19, 19)
+        Me.Guna2ImageButton1.PressedState.Parent = Me.Guna2ImageButton1
+        Me.Guna2ImageButton1.Size = New System.Drawing.Size(32, 32)
+        Me.Guna2ImageButton1.TabIndex = 6
+        '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
@@ -382,26 +403,6 @@ Partial Class AddLoanModal
         Me.mata_uang_label.TabIndex = 42
         Me.mata_uang_label.Text = "Rupiah"
         '
-        'Guna2ImageButton1
-        '
-        Me.Guna2ImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2ImageButton1.CheckedState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
-        Me.Guna2ImageButton1.CheckedState.ImageSize = New System.Drawing.Size(19, 19)
-        Me.Guna2ImageButton1.CheckedState.Parent = Me.Guna2ImageButton1
-        Me.Guna2ImageButton1.HoverState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
-        Me.Guna2ImageButton1.HoverState.ImageSize = New System.Drawing.Size(19, 19)
-        Me.Guna2ImageButton1.HoverState.Parent = Me.Guna2ImageButton1
-        Me.Guna2ImageButton1.Image = Global.Elebrary.My.Resources.Resources.close_icon
-        Me.Guna2ImageButton1.ImageRotate = 0!
-        Me.Guna2ImageButton1.ImageSize = New System.Drawing.Size(19, 19)
-        Me.Guna2ImageButton1.Location = New System.Drawing.Point(708, 11)
-        Me.Guna2ImageButton1.Name = "Guna2ImageButton1"
-        Me.Guna2ImageButton1.PressedState.Image = Global.Elebrary.My.Resources.Resources.close_icon_transparent
-        Me.Guna2ImageButton1.PressedState.ImageSize = New System.Drawing.Size(19, 19)
-        Me.Guna2ImageButton1.PressedState.Parent = Me.Guna2ImageButton1
-        Me.Guna2ImageButton1.Size = New System.Drawing.Size(32, 32)
-        Me.Guna2ImageButton1.TabIndex = 6
-        '
         'AddLoanModal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -426,6 +427,7 @@ Partial Class AddLoanModal
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.box_customer_name)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AddLoanModal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AddLoanModal"
