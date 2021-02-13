@@ -1,12 +1,12 @@
 ﻿Module ClassController
     Private Property db As New ElebraryContext
 
-    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4) As ClassResponse
+    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4, Optional keyword As String = "") As ClassResponse
 
         page -= 1
 
-        Dim listData As List(Of Kelas) = db.Classes.OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
-        Dim countNext As Integer = db.Classes.OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
+        Dim listData As List(Of Kelas) = db.Classes.Where(Function(kelas) kelas.name.Contains(keyword) Or kelas.id.ToString().Contains(keyword)).OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
+        Dim countNext As Integer = db.Classes.Where(Function(kelas) kelas.name.Contains(keyword) Or kelas.id.ToString().Contains(keyword)).OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
         Dim isNext As Boolean = countNext > 0 And countNext <= perPage
         Dim totalData As Integer = db.Classes.Count()
 

@@ -8,12 +8,12 @@ Module BookController
         db = Globals.globalDb
     End Sub
 
-    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4) As BookResponse
+    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4, Optional keyword As String = "") As BookResponse
 
         page -= 1
 
-        Dim listData As List(Of Book) = db.Books.OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
-        Dim countNext As Integer = db.Books.OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
+        Dim listData As List(Of Book) = db.Books.Where(Function(book) book.id.ToString().Contains(keyword) Or book.title.Contains(keyword) Or book.author.Contains(keyword) Or book.publisher.Contains(keyword) Or book.stock.ToString().Contains(keyword)).OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
+        Dim countNext As Integer = db.Books.Where(Function(book) book.id.ToString().Contains(keyword) Or book.title.Contains(keyword) Or book.author.Contains(keyword) Or book.publisher.Contains(keyword) Or book.stock.ToString().Contains(keyword)).OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
         Dim isNext As Boolean = countNext > 0 And countNext <= perPage
         Dim totalData As Integer = db.Books.Count()
 

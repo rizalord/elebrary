@@ -9,12 +9,12 @@ Module CustomerController
         db = Globals.globalDb
     End Sub
 
-    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4) As CustomerResponse
+    Public Function index(Optional page As Integer = 1, Optional perPage As Integer = 4, Optional keyword As String = "") As CustomerResponse
 
         page -= 1
 
-        Dim listData As List(Of Customer) = db.Customers.Include("loans").Include("identifier").Include("loans.book").OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
-        Dim countNext As Integer = db.Customers.OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
+        Dim listData As List(Of Customer) = db.Customers.Include("loans").Include("identifier").Include("loans.book").Where(Function(customer) customer.name.Contains(keyword) Or customer.address.Contains(keyword) Or customer.id.ToString().Contains(keyword) Or customer.identifier.name.Contains(keyword)).OrderByDescending(Function(e) e.id).Skip(page * perPage).Take(perPage).ToList()
+        Dim countNext As Integer = db.Customers.Include("loans").Include("identifier").Where(Function(customer) customer.name.Contains(keyword) Or customer.address.Contains(keyword) Or customer.id.ToString().Contains(keyword) Or customer.identifier.name.Contains(keyword)).OrderByDescending(Function(e) e.id).Skip((page + 1) * perPage).Take(perPage).ToList().Count
         Dim isNext As Boolean = countNext > 0 And countNext <= perPage
         Dim totalData As Integer = db.Customers.Count()
 

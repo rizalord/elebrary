@@ -9,16 +9,16 @@
         RetrieveWithReset()
     End Sub
 
-    Private Sub RetrieveWithReset()
+    Private Sub RetrieveWithReset(Optional keyword As String = "")
         page = 1
         perPage = 4
-        RetrieveData()
+        RetrieveData(keyword)
     End Sub
 
-    Private Sub RetrieveData()
+    Private Sub RetrieveData(Optional keyword As String = "")
         ListPanel.Controls.Clear()
 
-        Dim data As AdminResponse = AdminController.index(page, perPage)
+        Dim data As AdminResponse = AdminController.index(page, perPage, keyword)
         isNext = data.isNext
 
         data.data.ForEach(Sub(e)
@@ -83,4 +83,7 @@
         RetrieveData()
     End Sub
 
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
+        RetrieveWithReset(Guna2TextBox1.Text)
+    End Sub
 End Class

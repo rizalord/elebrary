@@ -24,6 +24,8 @@ Partial Class ClassesPage
     Private Sub InitializeComponent()
         Me.CenterPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.btn_prev = New Guna.UI2.WinForms.Guna2Button()
+        Me.btn_next = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ListPanel = New Guna.UI2.WinForms.Guna2Panel()
         Me.label_totaldata = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -38,8 +40,6 @@ Partial Class ClassesPage
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.btn_prev = New Guna.UI2.WinForms.Guna2Button()
-        Me.btn_next = New Guna.UI2.WinForms.Guna2Button()
         Me.CenterPanel.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -80,6 +80,48 @@ Partial Class ClassesPage
         Me.Guna2Panel10.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, 0, 0, 4)
         Me.Guna2Panel10.Size = New System.Drawing.Size(1008, 456)
         Me.Guna2Panel10.TabIndex = 14
+        '
+        'btn_prev
+        '
+        Me.btn_prev.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.btn_prev.BorderRadius = 5
+        Me.btn_prev.BorderThickness = 1
+        Me.btn_prev.CheckedState.Parent = Me.btn_prev
+        Me.btn_prev.CustomImages.Parent = Me.btn_prev
+        Me.btn_prev.CustomizableEdges.BottomRight = False
+        Me.btn_prev.CustomizableEdges.TopRight = False
+        Me.btn_prev.FillColor = System.Drawing.Color.Transparent
+        Me.btn_prev.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_prev.ForeColor = System.Drawing.Color.White
+        Me.btn_prev.HoverState.Parent = Me.btn_prev
+        Me.btn_prev.Image = Global.Elebrary.My.Resources.Resources.chevron_left_bold
+        Me.btn_prev.ImageSize = New System.Drawing.Size(10, 12)
+        Me.btn_prev.Location = New System.Drawing.Point(891, 406)
+        Me.btn_prev.Name = "btn_prev"
+        Me.btn_prev.ShadowDecoration.Parent = Me.btn_prev
+        Me.btn_prev.Size = New System.Drawing.Size(38, 36)
+        Me.btn_prev.TabIndex = 14
+        '
+        'btn_next
+        '
+        Me.btn_next.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.btn_next.BorderRadius = 5
+        Me.btn_next.BorderThickness = 1
+        Me.btn_next.CheckedState.Parent = Me.btn_next
+        Me.btn_next.CustomImages.Parent = Me.btn_next
+        Me.btn_next.CustomizableEdges.BottomLeft = False
+        Me.btn_next.CustomizableEdges.TopLeft = False
+        Me.btn_next.FillColor = System.Drawing.Color.Transparent
+        Me.btn_next.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_next.ForeColor = System.Drawing.Color.White
+        Me.btn_next.HoverState.Parent = Me.btn_next
+        Me.btn_next.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
+        Me.btn_next.ImageSize = New System.Drawing.Size(10, 12)
+        Me.btn_next.Location = New System.Drawing.Point(935, 406)
+        Me.btn_next.Name = "btn_next"
+        Me.btn_next.ShadowDecoration.Parent = Me.btn_next
+        Me.btn_next.Size = New System.Drawing.Size(38, 36)
+        Me.btn_next.TabIndex = 13
         '
         'Guna2Panel5
         '
@@ -249,48 +291,6 @@ Partial Class ClassesPage
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(138, 30)
         Me.Guna2HtmlLabel1.TabIndex = 0
         Me.Guna2HtmlLabel1.Text = "Manage Classes"
-        '
-        'btn_prev
-        '
-        Me.btn_prev.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.btn_prev.BorderRadius = 5
-        Me.btn_prev.BorderThickness = 1
-        Me.btn_prev.CheckedState.Parent = Me.btn_prev
-        Me.btn_prev.CustomImages.Parent = Me.btn_prev
-        Me.btn_prev.CustomizableEdges.BottomRight = False
-        Me.btn_prev.CustomizableEdges.TopRight = False
-        Me.btn_prev.FillColor = System.Drawing.Color.Transparent
-        Me.btn_prev.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_prev.ForeColor = System.Drawing.Color.White
-        Me.btn_prev.HoverState.Parent = Me.btn_prev
-        Me.btn_prev.Image = Global.Elebrary.My.Resources.Resources.chevron_left_bold
-        Me.btn_prev.ImageSize = New System.Drawing.Size(10, 12)
-        Me.btn_prev.Location = New System.Drawing.Point(891, 406)
-        Me.btn_prev.Name = "btn_prev"
-        Me.btn_prev.ShadowDecoration.Parent = Me.btn_prev
-        Me.btn_prev.Size = New System.Drawing.Size(38, 36)
-        Me.btn_prev.TabIndex = 14
-        '
-        'btn_next
-        '
-        Me.btn_next.BorderColor = System.Drawing.Color.FromArgb(CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(196, Byte), Integer))
-        Me.btn_next.BorderRadius = 5
-        Me.btn_next.BorderThickness = 1
-        Me.btn_next.CheckedState.Parent = Me.btn_next
-        Me.btn_next.CustomImages.Parent = Me.btn_next
-        Me.btn_next.CustomizableEdges.BottomLeft = False
-        Me.btn_next.CustomizableEdges.TopLeft = False
-        Me.btn_next.FillColor = System.Drawing.Color.Transparent
-        Me.btn_next.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_next.ForeColor = System.Drawing.Color.White
-        Me.btn_next.HoverState.Parent = Me.btn_next
-        Me.btn_next.Image = Global.Elebrary.My.Resources.Resources.chevron_right_bold
-        Me.btn_next.ImageSize = New System.Drawing.Size(10, 12)
-        Me.btn_next.Location = New System.Drawing.Point(935, 406)
-        Me.btn_next.Name = "btn_next"
-        Me.btn_next.ShadowDecoration.Parent = Me.btn_next
-        Me.btn_next.Size = New System.Drawing.Size(38, 36)
-        Me.btn_next.TabIndex = 13
         '
         'ClassesPage
         '

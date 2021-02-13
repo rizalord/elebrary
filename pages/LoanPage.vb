@@ -8,16 +8,16 @@
         RetrieveWithReset()
     End Sub
 
-    Private Sub RetrieveWithReset()
+    Private Sub RetrieveWithReset(Optional keyword As String = "")
         page = 1
         perPage = 4
-        RetrieveData()
+        RetrieveData(keyword)
     End Sub
 
-    Private Sub RetrieveData()
+    Private Sub RetrieveData(Optional keyword As String = "")
         ListPanel.Controls.Clear()
 
-        Dim data As CustomerResponse = CustomerController.index(page, perPage)
+        Dim data As CustomerResponse = CustomerController.index(page, perPage, keyword)
         isNext = data.isNext
 
         data.data.ForEach(Sub(e)
@@ -123,5 +123,9 @@
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         CustomerController.Export()
+    End Sub
+
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox1.TextChanged
+        RetrieveWithReset(Guna2TextBox1.Text)
     End Sub
 End Class
