@@ -27,7 +27,7 @@ it is also possible for me to continue developing this application.
 
   Welcome Form                 |   Dashboard Form      
 :-------------------------:|:-------------------------:
-![](https://i.imgur.com/iFcu6Q6.png)|![](https://i.imgur.com/8zFQnb1.png)
+![](https://i.imgur.com/H5Ukvdl.jpg)|![](https://i.imgur.com/8zFQnb1.png)
 
 Books Form                 |   Loans Form        
 :-------------------------:|:-------------------------:
