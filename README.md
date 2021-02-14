@@ -93,6 +93,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@rizalord_](https://twitter.com/rizalord_) - ahmadkhamdani9@gmail.com
+Ahmad Khamdani - [@rizalord_](https://twitter.com/rizalord_) - ahmadkhamdani9@gmail.com
 
 Project Link: [https://github.com/rizalord/elebrary](https://github.com/rizalord/elebrary)
