@@ -61,6 +61,9 @@
 
 
         End If
+
+        Globals.books.Clear()
+        Globals.booksQuantity.Clear()
     End Sub
 
     Private Sub Guna2ImageButton1_Click(sender As Object, e As EventArgs) Handles Guna2ImageButton1.Click
