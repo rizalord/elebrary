@@ -23,6 +23,12 @@ it is also possible for me to continue developing this application.
 - Multiple Target & Currency
 - Login Validation with Captcha
 
+## Library used
+
+- Guna UI Framework
+- Entity Framework
+- EPPlus
+
 ## Preview
 
   Welcome Form                 |   Dashboard Form      
@@ -39,12 +45,6 @@ Admins Form        |  Profile Form
 ![](https://i.imgur.com/PmuLrjJ.png)|![](https://i.imgur.com/gAVTl9r.png)
 
 
-## Library used
-
-- Guna UI Framework
-- Entity Framework
-- EPPlus
-
 ## Database Structure
 
 ![](https://i.imgur.com/aHBlFhf.png)
@@ -53,10 +53,9 @@ Admins Form        |  Profile Form
 
 ### Production
 
-* Download application from [here](https://github.com/rizalord/elebrary/releases/download/1.0/Release.rar)
+* Download application from [here](https://github.com/rizalord/elebrary/releases/download/1.0/Setup.rar)
 * Extract
-* Import database to SQL Server (elebrary.bacpac)
-* Run or Double Click Elebrary.exe
+* Run or Double Click setup.exe
 
 ### Development
 * Clone or Download this Repository
